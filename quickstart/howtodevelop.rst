@@ -26,13 +26,14 @@ This operation will create a folder structure together with a :file:`pom.xml` fi
 
 .. remote-code-block:: java
     java-repo 
-    QuickstartFirstProgram.java
+    QuickstartFirstJob.java
     :caption: Java
 
-.. literalinclude:: code/scala-first-program.rst
-	:caption: Scala
 
-=======================================
+.. remote-code-block:: scala
+    scala-repo 
+    QuickstartFirstJob.scala
+    :caption: Scala
 Build, pack and submit your application
 =======================================
 

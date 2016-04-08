@@ -10,12 +10,16 @@ Contents:
 
 .. toctree::
    :maxdepth: 1
+   :glob:
 
-   quickstart/howtodevelop
-   kafka/readwrite
-   alluxio/
-   cassandra/
-   flink/
+   introduction   
+   installation/*
+   quickstart/*
+   kafka/*
+   alluxio/*
+   cassandra/*
+   flink/*
+   *
 
 
 Indices and tables

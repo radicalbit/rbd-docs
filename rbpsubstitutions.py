@@ -5,3 +5,6 @@ versions_subs="""
 
 """
 
+other_substitutions="""
+"""
+all_substitutions=versions_subs+other_substitutions

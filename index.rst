@@ -9,15 +9,18 @@ Welcome to Radicalbit Fast Data Platform's documentation!
 Contents:
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
 
    quickstart/howtodevelop
+   kafka/readwrite
+   alluxio/
+   cassandra/
+   flink/
 
 
 Indices and tables
 ==================
 
 * :ref:`genindex`
-* :ref:`modindex`
 * :ref:`search`
 

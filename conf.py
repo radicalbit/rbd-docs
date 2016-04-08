@@ -18,7 +18,9 @@ import os
 import sphinx_rtd_theme
 
 sys.path.insert(0,".")
-import versions
+sys.path.append(os.path.abspath('extensions'))
+
+import rbpsubstitutions
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
@@ -32,7 +34,7 @@ import versions
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = ['rst2pdf.pdfbuilder']
+extensions = ['rst2pdf.pdfbuilder','remote']
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -264,6 +266,9 @@ man_pages = [
      [author], 1)
 ]
 
+
+
+
 # If true, show URL addresses after external links.
 #man_show_urls = False
 
@@ -369,4 +374,4 @@ pdf_documents = [
 
 html_add_permalinks=u" \U0001F517"
 
-rst_epilog=versions.versions_subs
+rst_epilog=rbpsubstitutions.all_substitutions

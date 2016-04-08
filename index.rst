@@ -9,16 +9,17 @@ Welcome to Radicalbit Fast Data Platform's documentation!
 Contents:
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
    :glob:
 
    introduction   
    installation/*
-   quickstart/*
+   quickstart/index-quickstart
    kafka/*
    alluxio/*
    cassandra/*
    flink/*
+   addons/index-addons
    *
 
 

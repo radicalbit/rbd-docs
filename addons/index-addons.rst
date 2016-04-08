@@ -2,7 +2,7 @@ Addons
 ======
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
 
    flink-jpmml/index-flink-jpmml
 

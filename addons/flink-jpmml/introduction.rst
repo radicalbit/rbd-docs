@@ -27,4 +27,8 @@ For more information about JPMML, please refer to the `JPMML repository <https:/
 Current features
 ----------------
 
+- Evaluation of a PMML model through the abstraction of the Evaluation Operators.
+- Scala and Java idiomatic API
+- Extensible strategies to define the behaviour of the Evaluation Operators. 
+
 

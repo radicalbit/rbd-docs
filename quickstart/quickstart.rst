@@ -1,7 +1,6 @@
-**********************************************
-How to start developing on Radicalbit Platform
-********************************************** 
-
+**********************************
+How to create your first Flink Job
+**********************************
 
 This tutorial will guide you through the basic steps to create a simple Flink job, include optional dependency to integrate with other components, build a JAR and submit it to a running Flink session.
 
@@ -17,12 +16,18 @@ The first step required is to use our Maven archetype to create a new project.
     mvn-archetype-java.rst 
     :caption: Java
 
-.. remote-code-block:: xml
+.. remote-code-block:: text
     snippet-repo 
     mvn-archetype-scala.rst
     :caption: Scala
 
-This operation will create a folder structure together with a :file:`pom.xml` file designed to properly import Flink dependencies and to build a JAR in the most efficient way. With this you should be able to create an executable Flink program. Let's see a simple example:
+This operation will create a folder structure together with a :file:`pom.xml` file designed to properly import Flink dependencies and to build a JAR in the most efficient way. 
+
+
+A simple Flink Job
+==================
+
+Now we can go through a simple Flink Job that will introduce you to the basic structure of a Flink Job. Here is an example of a Job that takes a stream of strings as an input, process them and then prints them to console.
 
 .. remote-code-block:: java
     java-repo 
@@ -34,6 +39,10 @@ This operation will create a folder structure together with a :file:`pom.xml` fi
     scala-repo 
     QuickstartFirstJob.scala
     :caption: Scala
+
+The `Flink Programming guide <https://ci.apache.org/projects/flink/flink-docs-release-1.0/>`_ provides a good resource to start learning how to develop on Flink, giving examples and explanations of the many high-level abstractions used by the framework. If this is the first time you work with Flink, there you will find all the required fundamentals to work with it.
+
+
 Build, pack and submit your application
 =======================================
 
@@ -50,7 +59,7 @@ Kafka Integration
 To include a Kafka Source or a Kafka Sink into your program you will first need to include the dependency in your :file:`pom.xml` file. The package :file:`kafka-connector` includes all that is necessary to connect a streaming job to Kafka, to process and publish on a Kafka topic.
 
 
-.. remote-code-block:: xml
+.. remote-code-block:: text
     snippet-repo 
     include-kafka.xml
     

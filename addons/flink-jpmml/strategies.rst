@@ -21,12 +21,29 @@ Result extraction strategies
 
 After the evaluation phase a raw result is produced by JPMML according to the specifications in the PMML file. This object may be parsed internally to the *Evaluation Operator* or forwarded to the following operator through the dedicated strategy.
 
-Get Raw Result strategy
------------------------
 
-**Supported in:** 
-- *Java:* 
-- *Scala:* pluto
+.. container:: strategy 
+
+	**Get Raw Result strategy**
+	
+	Forward JPMML's output without processing it.
+
+	**Supported in:** 
+
+	- **Java:** :code:`Strategies.GetRawResultStrategy()`
+	- **Scala:** :code:`ResultExtractionStrategies.getRawResult`
+
+.. container:: strategy 
+
+	**Target and Output field strategy**
+	
+	Extracts all the target fields and output fields.
+
+	**Supported in:** 
+
+	- **Java:** :code:`Strategies.ExtractTargetAndOutputFieldStrategy()`
+	- **Scala:** :code:`ResultExtractionStrategies.extractTargetAndOutputField`
+
 
 Operator-level error handling strategies
 ****************************************

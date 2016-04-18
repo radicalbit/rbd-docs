@@ -1,4 +1,4 @@
-Addons
+Add-ons
 ======
 
 .. toctree::

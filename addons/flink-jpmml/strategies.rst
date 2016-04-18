@@ -18,8 +18,8 @@ These strategies let you handle exceptions raised during JPMML's preparation pha
 
 	**Supported in:** 
 
-	- **Java:** :code:`Strategies.PropagateExceptionStrategy`
-	- **Scala:** :code:`MissingValueStrategies.throwExceptionStrategy`
+	- **Java:** :code:`Strategies.propagateExceptionStrategy`
+	- **Scala:** :code:`MissingValueStrategies.propagateExceptionStrategy`
 
 
 
@@ -38,7 +38,7 @@ JPMML and PMML standard allow for the specification of policies to deal with mis
 
 	**Supported in:** 
 
-	- **Java:** :code:`Strategies.DefaultValueStrategy(Map<DataType, Object> m)`
+	- **Java:** :code:`Strategies.defaultValueStrategy(Map<DataType, Object> m)`
 	- **Scala:** :code:`MissingValueStrategies.createDefaultValueReplaceStrategy(defaults: Map[DataType, Any])`
 
 .. container:: strategy 
@@ -49,7 +49,7 @@ JPMML and PMML standard allow for the specification of policies to deal with mis
 
 	**Supported in:** 
 
-	- **Java:** :code:`Strategies.DelegateToPMMLStrategy()`
+	- **Java:** :code:`Strategies.delegateToPMMLStrategy()`
 	- **Scala:** :code:`MissingValueStrategies.delegateToPMML`
 
 
@@ -67,7 +67,7 @@ After the evaluation phase a raw result is produced by JPMML according to the sp
 
 	**Supported in:** 
 
-	- **Java:** :code:`Strategies.GetRawResultStrategy()`
+	- **Java:** :code:`Strategies.getRawResultStrategy()`
 	- **Scala:** :code:`ResultExtractionStrategies.getRawResult`
 
 .. container:: strategy 
@@ -78,7 +78,7 @@ After the evaluation phase a raw result is produced by JPMML according to the sp
 
 	**Supported in:** 
 
-	- **Java:** :code:`Strategies.ExtractTargetAndOutputFieldStrategy()`
+	- **Java:** :code:`Strategies.extractTargetAndOutputFieldStrategy()`
 	- **Scala:** :code:`ResultExtractionStrategies.extractTargetAndOutputField`
 
 .. container:: strategy 
@@ -105,8 +105,8 @@ This strategy process any exception raised during the evaluation process. It is 
 
 	**Supported in:** 
 
-	- **Java:** :code:`Strategies.LogExceptionStrategy`
-	- **Scala:** :code:`MissingValueStrategies.LogExceptionStrategy`
+	- **Java:** :code:`Strategies.logExceptionStrategy`
+	- **Scala:** :code:`MissingValueStrategies.logExceptionStrategy`
 
 
 

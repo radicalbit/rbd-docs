@@ -28,7 +28,7 @@ You should use the :file:`rbpsubstitutions.py` file for all the version referenc
 How to include code
 ___________________
 
-#. Commit your code to the rbp-docs-code repository. Use the *snippets/* directory for scripts, short pieces of code and anything that doesn't require a proper verification and compilation. Use the *src/* directory for everything else.
+#. Commit your code to the `rbp-docs-code repository <http://github.com/radicalbit/rbp-docs-code>`_. Use the *snippets/* directory for scripts, short pieces of code and anything that doesn't require a proper verification and compilation. Use the *src/* directory for everything else.
 #. Use the remote-code-block directive to include your code
 
 

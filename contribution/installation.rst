@@ -1,9 +1,9 @@
 =============================================================
-How to setup your enviroment to work on the RBP documentation
+How to setup your environment to work on the RBP documentation
 =============================================================
 
 
-First download and install python then:
+First download and install Python then:
 
 ::
 

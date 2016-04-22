@@ -5,4 +5,4 @@ repositories={
 
 }
 
-base_repo="https://raw.githubusercontent.com/chobeat/rbp-docs-code/"
+base_repo="https://raw.githubusercontent.com/radicalbit/rbp-docs-code/"

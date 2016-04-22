@@ -18,7 +18,7 @@ class RemoteCodeBlock(code.CodeBlock):
         env = document.settings.env
         rel_filename, filename = env.relfn2path(self.arguments[0])
 
-	url = repos.repositories[self.arguments[1]]+"/"+self.arguments[2]
+	url = repos.base_repo+repos.repositories[self.arguments[1]]+"/"+self.arguments[2]
 
 	session=requests.Session()
 	session.headers.update({"Cache-Control": "no-cache, no-store, must-revalidate"})

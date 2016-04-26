@@ -28,27 +28,15 @@ You should use the :file:`rbpsubstitutions.py` file for all the version referenc
 How to include code
 ___________________
 
-#. Commit your code to the `rbp-docs-code repository <http://github.com/radicalbit/rbp-docs-code>`_. Use the *snippets/* directory for scripts, short pieces of code and anything that doesn't require a proper verification and compilation. Use the *src/* directory for everything else.
-#. Use the remote-code-block directive to include your code
+#. Correctly initialize the code submodule (:doc:`ref<installation>`).
+#. Commit your code to the `rbp-docs-code repository <http://github.com/radicalbit/rbp-docs-code>`_ or to the internal submodule in the :file:`rbp-docs-code` directory. Use the *snippets/* directory for scripts, short pieces of code and anything that doesn't require a proper verification and compilation. Use the *src/* directory for everything else.
+#. Use the `literalinclude` directive (`ref <http://www.sphinx-doc.org/en/stable/markup/code.html#directive-literalinclude>`_) to include your code.
 
 
-.. literalinclude:: remote-code-block-example.txt
+.. literalinclude:: literalinclude-example.txt
 
-This custom directive takes 3 required parameter and a number of options. The 3 required parameter are:
+.. Note::
 
-- the language of the code block (for syntax highlighting purposes, *text* for no highlighting)
-- the repository where the code block is hosted. These repositories are specified in the :file:`repos.py` file.
-- the filename relative to the repository path.
-
-The options supported as of now are:
-
-- *caption*
-- *lines*
-
-Here a practical example:
-
-.. literalinclude:: remote-code-block-example2.txt
-
-
+    Always specify the :name: option when labeling the snippets with an already existing label. This will avoid warnings during the build process.
 
 

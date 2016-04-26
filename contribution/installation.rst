@@ -27,4 +27,11 @@ To install the required modules:
 	sudo pip install rst2pdf
 	sudo pip install requests
 
+To properly clone and initialize your local repository:
+
+::
+
+	git clone https://github.com/radicalbit/rbp-docs.git
+	git submodule update --init --recursive
+
 

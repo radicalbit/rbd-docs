@@ -1,8 +1,7 @@
 repositories={
-'snippet-repo': 'master/snippets',
-'java-repo': 'master/src/main/java/radicalbit/io/java',
-'scala-repo': 'master/src/main/scala/radicalbit/io/scala'
+'snippet-repo': 'rbp-docs-code/snippets',
+'java-repo': 'rbp-docs-code/src/main/java/radicalbit/io/java',
+'scala-repo': 'rbp-docs-code/src/main/scala/radicalbit/io/scala'
 
 }
 
-base_repo="https://raw.githubusercontent.com/radicalbit/rbp-docs-code/"

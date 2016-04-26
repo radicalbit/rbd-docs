@@ -1,5 +1,5 @@
 Add-ons
-======
+=======
 
 .. toctree::
    :maxdepth: 2

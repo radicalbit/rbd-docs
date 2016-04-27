@@ -1,7 +1,6 @@
 ===============
 Akka Connector
 ===============
-<<<<<<< HEAD
 
 Introduction
 ------------
@@ -42,5 +41,3 @@ Example
    :language: scala
    :name: AkkaSinkExample
 
-=======
->>>>>>> b8122eb147491ffeb90c62df31199fe835d0722e

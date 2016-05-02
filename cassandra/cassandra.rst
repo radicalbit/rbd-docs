@@ -9,10 +9,9 @@ Pay attention that Apache Cassandra differs from Datastax Enterprise Cassandra. 
 to the opensource Cassandra and not the commercial one provided by Datastax.
 
 Contents
---------
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 10
+   :glob:
 
-   kerberos
-   encryption
+   /cassandra/encryption/encryption.rst

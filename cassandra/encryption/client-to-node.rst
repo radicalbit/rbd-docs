@@ -19,7 +19,7 @@ To make client-to-node encryption, Java client will need a trustStore that inclu
    .. literalinclude:: /rbp-docs-code/snippets/cassandra-ssl/cassandra-node-client-encryption-section.yaml
        :language: bash
 
-3. In Java client program, call the :code:`withSSL()` method when using the Cluster builder
+3. In Java client program, call the :code:`withSSL()` method when using the Cluster builder:
 
    .. literalinclude:: /rbp-docs-code/snippets/cassandra-ssl/cassandra-java-client-cluster-with-ssl.txt
        :language: bash

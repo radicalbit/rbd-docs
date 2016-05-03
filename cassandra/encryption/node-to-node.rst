@@ -64,7 +64,7 @@ In order to get trusted, node certificates need to be signed by the CA. This is 
   1. every node must export a *Certificate Sign Request* corresponding to the previously created certificate
   2. the CSR must be signed by the CA
 
-To export the CSR for alias ``node1`` stored in the :file:`node1.jks` file run :code:`keytool` with the :code:`certreq` command
+To export the CSR for alias ``node1`` stored in the :file:`node1.jks` file run :code:`keytool` with the :code:`certreq` command:
 
 .. literalinclude:: /rbp-docs-code/snippets/cassandra-ssl/keytool-csr-generation.txt
     :language: bash
@@ -87,7 +87,7 @@ Import signed certificate
 -------------------------
 
 Signed certificate need to be imported back into the keystore, this will allow node to authenticate against the others.
-To proper do this, first import the CA Root Certificate. This will create a correct chain of trust.
+To properly do this, first import the CA Root Certificate. This will create a correct chain of trust.
 To import the signed certificate for :file:`node1` run:
 
 .. literalinclude:: /rbp-docs-code/snippets/cassandra-ssl/import-caroot.txt

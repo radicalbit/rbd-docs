@@ -2,7 +2,7 @@ Encryption
 ==========
 
 Encryption in Cassandra is done through TSL/SSL and it's related to node-to-node encryption and client-to-node one.
-This part of documentation explains how to enable both.
+This section explains how to enable both.
 
 .. toctree::
    :maxdepth: 10

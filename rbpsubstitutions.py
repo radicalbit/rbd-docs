@@ -7,8 +7,6 @@ versions_subs="""
 other_substitutions="""
 .. |fdd| replace:: Radicalbit Fast Data Distribution
 """
-all_substitutions=versions_subs+other_substitutions
-
 
 
 ssl_subs="""

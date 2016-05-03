@@ -21,7 +21,7 @@ The first step is to generate a own |sslCA| with a Root Certificate. The Root Ce
 OpenSSL will be used to create the CA. To simplify the workflow it's better to prepare a file with the configuration for the CA like the one below.
 
 .. literalinclude:: /rbp-docs-code/snippets/cassandra-ssl/ca_generation.conf
-    :language: bash
+    :language: text
     :caption: ca.conf
 
 Run :code:`openssl req -config ca.conf -new -x509 -keyout ca.key -out ca.rootcertificate -days 365` to generate:
@@ -41,7 +41,7 @@ the provided keystore. If it does not exist, will be generated.
 For every node run ``keytool`` with the ``genkeypair`` command as follows:
 
 .. literalinclude:: /rbp-docs-code/snippets/cassandra-ssl/keytool-rsa-generation.txt
-    :language: bash
+    :language: text
 
 Pay attention to use the *same password* for ``keypass`` and ``storepass`` parameters due to a Cassandra limitation. Repeat the procedure for
 *node2*, *node3* and so on changing node name. To complete description of the command, the list of parameters applied
@@ -67,14 +67,14 @@ In order to get trusted, node certificates need to be signed by the CA. This is 
 To export the CSR for alias ``node1`` stored in the :file:`node1.jks` file run :code:`keytool` with the :code:`certreq` command:
 
 .. literalinclude:: /rbp-docs-code/snippets/cassandra-ssl/keytool-csr-generation.txt
-    :language: bash
+    :language: text
 
 This command will extract the CSR into the file :file:`node1.csr`.
 
 To sign the CSR run the command:
 
 .. literalinclude:: /rbp-docs-code/snippets/cassandra-ssl/openssl-csr-sign.txt
-    :language: bash
+    :language: text
 
 This will generate a CA signed certificate into the file :file:`node1.sc` using the CSR created in the previous step with a validity of 365 days.
 The ``CA`` and ``CAkey`` parameters are those files written when creating the CA Authority. The ``passin`` parameter allows to input a password.
@@ -91,12 +91,12 @@ To properly do this, first import the CA Root Certificate. This will create a co
 To import the signed certificate for :file:`node1` run:
 
 .. literalinclude:: /rbp-docs-code/snippets/cassandra-ssl/import-caroot.txt
-    :language: bash
+    :language: text
 
 After this, import back the signed certificate for file:`node1` into its keystore using the same alias.
 
 .. literalinclude::  /rbp-docs-code/snippets/cassandra-ssl/import-signed-certificate.txt
-    :language: bash
+    :language: text
 
 Once again, to verify the output run :code:`keytool -list -v -keystore node1.jks -storepass N0dePa$$word`
 Repeat the procedure for the another nodes using proper keystore.
@@ -107,7 +107,7 @@ Create the trustStore
 Every node will trust the |sslCA| as long as its certificate is in the trustStore. To create the trustStore and insert the Root Certificate, run this command:
 
 .. literalinclude:: /rbp-docs-code/snippets/cassandra-ssl/create-trust-store.txt
-    :language: bash
+    :language: text
 
 
 Configure Cassandra node
@@ -121,7 +121,7 @@ For every node, do the following steps:
   2. Replace ``server_encryption_options`` of |casYamlPath| with the following snippet. Specify the full path of keyStore and trustStore.
 
      .. literalinclude:: /rbp-docs-code/snippets/cassandra-ssl/security-cassandra-yaml.txt
-         :language: bash
+         :language: text
 
    3. Download *Java Cryptography Extension (JCE) Unlimited Strength Jurisdiction Policy Files for JDK/JRE 7*
       from `Oracle site <http://www.oracle.com/technetwork/java/javase/downloads/jce-7-download-432124.html>`_, unzip and copy it

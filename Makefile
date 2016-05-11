@@ -102,9 +102,9 @@ qthelp:
 	@echo
 	@echo "Build finished; now you can run "qcollectiongenerator" with the" \
 	      ".qhcp project file in $(BUILDDIR)/qthelp, like this:"
-	@echo "# qcollectiongenerator $(BUILDDIR)/qthelp/RadicalbitFastDataPlatform.qhcp"
+	@echo "# qcollectiongenerator $(BUILDDIR)/qthelp/RadicalbitFastDataDistribution.qhcp"
 	@echo "To view the help file:"
-	@echo "# assistant -collectionFile $(BUILDDIR)/qthelp/RadicalbitFastDataPlatform.qhc"
+	@echo "# assistant -collectionFile $(BUILDDIR)/qthelp/RadicalbitFastDataDistribution.qhc"
 
 .PHONY: applehelp
 applehelp:
@@ -121,8 +121,8 @@ devhelp:
 	@echo
 	@echo "Build finished."
 	@echo "To view the help file:"
-	@echo "# mkdir -p $$HOME/.local/share/devhelp/RadicalbitFastDataPlatform"
-	@echo "# ln -s $(BUILDDIR)/devhelp $$HOME/.local/share/devhelp/RadicalbitFastDataPlatform"
+	@echo "# mkdir -p $$HOME/.local/share/devhelp/RadicalbitFastDataDistribution"
+	@echo "# ln -s $(BUILDDIR)/devhelp $$HOME/.local/share/devhelp/RadicalbitFastDataDistribution"
 	@echo "# devhelp"
 
 .PHONY: epub

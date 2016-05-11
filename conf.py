@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #
-# Radicalbit Fast Data Platform documentation build configuration file, created by
+# Radicalbit Fast Data Distribution documentation build configuration file, created by
 # sphinx-quickstart on Wed Apr  6 12:20:39 2016.
 #
 # This file is execfile()d with the current directory set to its
@@ -51,7 +51,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'Radicalbit Fast Data Platform'
+project = u'Radicalbit Fast Data Distribution'
 copyright = u'2016, Radicalbit Team'
 author = u'Radicalbit Team'
 
@@ -128,7 +128,7 @@ html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
 
 # The name for this set of Sphinx documents.
 # "<project> v<release> documentation" by default.
-#html_title = u'Radicalbit Fast Data Platform v1.0'
+#html_title = u'Radicalbit Fast Data Distribution v1.0'
 
 # A shorter title for the navigation bar.  Default is the same as html_title.
 #html_short_title = None
@@ -210,7 +210,7 @@ html_static_path = ['_static']
 #html_search_scorer = 'scorer.js'
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'RadicalbitFastDataPlatformdoc'
+htmlhelp_basename = 'RadicalbitFastDataDistributiondoc'
 
 # -- Options for LaTeX output ---------------------------------------------
 
@@ -232,7 +232,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'RadicalbitFastDataPlatform.tex', u'Radicalbit Fast Data Platform Documentation',
+    (master_doc, 'RadicalbitFastDataDistribution.tex', u'Radicalbit Fast Data Distribution Documentation',
      u'Radicalbit Team', 'manual'),
 ]
 
@@ -262,7 +262,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'radicalbitfastdataplatform', u'Radicalbit Fast Data Platform Documentation',
+    (master_doc, 'radicalbitfastdatadistribution', u'Radicalbit Fast Data Distribution Documentation',
      [author], 1)
 ]
 
@@ -279,8 +279,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'RadicalbitFastDataPlatform', u'Radicalbit Fast Data Platform Documentation',
-     author, 'RadicalbitFastDataPlatform', 'One line description of project.',
+    (master_doc, 'RadicalbitFastDataDistribution', u'Radicalbit Fast Data Distribution Documentation',
+     author, 'RadicalbitFastDataDistribution', 'One line description of project.',
      'Miscellaneous'),
 ]
 
@@ -369,7 +369,7 @@ epub_exclude_files = ['search.html']
 # -- Options for PDF output ----------------------------------------------
 
 pdf_documents = [
-    (master_doc, 'RadicalbitFastDataPlatform', u'Radicalbit Fast Data Platform Documentation',author),
+    (master_doc, 'RadicalbitFastDataDistribution', u'Radicalbit Fast Data Distribution Documentation',author),
 ]
 
 html_add_permalinks=u" \U0001F517"

@@ -16,7 +16,7 @@ Contents:
    installation/*
    quickstart/index-quickstart
    kafka/*
-   alluxio/*
+   alluxio/alluxio
    cassandra/*
    flink/*
    addons/index-addons

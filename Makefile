@@ -31,6 +31,7 @@ help:
 	@echo "  qthelp     to make HTML files and a qthelp project"
 	@echo "  applehelp  to make an Apple Help Book"
 	@echo "  devhelp    to make HTML files and a Devhelp project"
+	@echo "  pdf        to make a pdf"
 	@echo "  epub       to make an epub"
 	@echo "  epub3      to make an epub3"
 	@echo "  latex      to make LaTeX files, you can set PAPER=a4 or PAPER=letter"
@@ -57,6 +58,12 @@ html:
 	$(SPHINXBUILD) -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html
 	@echo
 	@echo "Build finished. The HTML pages are in $(BUILDDIR)/html."
+
+.PHONY: pdf
+pdf:
+	$(SPHINXBUILD) -b pdf $(ALLSPHINXOPTS) $(BUILDDIR)/pdf
+	@echo
+	@echo "Build finished. The PDF is in $(BUILDDIR)/pdf."
 
 .PHONY: dirhtml
 dirhtml:

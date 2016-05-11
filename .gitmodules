@@ -1,3 +1,4 @@
 [submodule "rbp-docs-code"]
 	path = rbp-docs-code
-	url = git@github.com:radicalbit/rbp-docs-code.git
+	url = https://github.com/radicalbit/rbp-docs-code.git
+	branch = master

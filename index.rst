@@ -19,6 +19,7 @@ Contents:
    alluxio/*
    cassandra/*
    flink/*
+   zeppelin/*
    addons/index-addons
    *
 

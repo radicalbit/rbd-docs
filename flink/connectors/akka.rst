@@ -9,7 +9,7 @@ This connector provides sink that sends data to a remote actor.
 
 To use this connector, add the following dependency to your project:
 
-.. literalinclude:: /rbp-docs-code/pom.xml 
+.. literalinclude:: /rbp-docs-code/mvn/pom.xml 
     :caption: pom.xml
     :language: xml
     :lines: 119-123
@@ -31,12 +31,12 @@ The AkkaSink expected the following arguments:
 Example
 --------
 
-.. literalinclude:: /rbp-docs-code/src/main/scala/radicalbit/io/scala/AkkaReceiverExample.scala
+.. literalinclude:: /rbp-docs-code/mvn/src/main/scala/radicalbit/io/scala/AkkaReceiverExample.scala
    :caption: AkkaReceiverExample
    :language: scala
    :name: AkkaReceiverExample
 
-.. literalinclude:: /rbp-docs-code/src/main/scala/radicalbit/io/scala/AkkaSinkExample.scala
+.. literalinclude:: /rbp-docs-code/mvn/src/main/scala/radicalbit/io/scala/AkkaSinkExample.scala
    :caption: AkkaSinkExample
    :language: scala
    :name: AkkaSinkExample

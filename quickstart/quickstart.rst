@@ -64,6 +64,8 @@ To include a Kafka Source or a Kafka Sink into your program you will first need 
 
 To discover how to actually use these connector, please refer to the OMISSIS.
 
+.. _alluxio-hadoop-interface:
+
 ==================================
 Read and Write from and to Alluxio
 ==================================

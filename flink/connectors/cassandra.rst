@@ -9,7 +9,7 @@ This connector provides sinks that writes data into a Cassandra database.
 
 To use this connector, add the following dependency to your project:
 
-.. literalinclude:: /rbp-docs-code/pom.xml
+.. literalinclude:: /rbp-docs-code/mvn/pom.xml
     :caption: pom.xml
     :language: xml
     :lines: 114-118

@@ -9,7 +9,7 @@ This connector provides sink that sends data to a remote actor.
 
 To use this connector, add the following dependency to your project:
 
-.. literalinclude:: /rbp-docs-code/pom.xml 
+.. literalinclude:: /rbp-docs-code/mvn/pom.xml 
     :caption: pom.xml
     :language: xml
     :lines: 119-123

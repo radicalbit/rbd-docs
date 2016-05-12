@@ -27,12 +27,12 @@ A simple Flink Job
 
 Now we can go through a simple Flink Job that will introduce you to the basic structure of a Flink Job. Here is an example of a Job that takes a stream of strings as an input, process them and then prints them to console.
 
-.. literalinclude:: /rbp-docs-code/src/main/java/radicalbit/io/java/QuickstartFirstJob.java
+.. literalinclude:: /rbp-docs-code/mvn/src/main/java/radicalbit/io/java/QuickstartFirstJob.java
     :language: java
     :caption: Java
     :name: quick-java
 
-.. literalinclude:: /rbp-docs-code/src/main/scala/radicalbit/io/scala/QuickstartFirstJob.scala
+.. literalinclude:: /rbp-docs-code/mvn/src/main/scala/radicalbit/io/scala/QuickstartFirstJob.scala
     :language: scala
     :caption: Scala
     :name: quick-scala

@@ -3,6 +3,7 @@ versions_subs="""
 .. |kafka-version| replace:: 0.9.0.1
 .. |kafka-connector-version| replace:: 0.9
 .. |cassandra-version| replace:: 2.2.5
+.. |flink-version| replace:: 1.0.1
 """
 
 other_substitutions="""

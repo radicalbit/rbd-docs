@@ -1,5 +1,5 @@
 ===============
-Apache Zeppelin
+Zeppelin
 ===============
 
 Introduction

@@ -20,13 +20,13 @@ Let's see it in action.
  
 First we need to retrieve the PMML file. In this example we will read it from the local filesystem but in a real enviroment the location of this file could be any location accessible from the Flink Client. 
 
-.. literalinclude:: /rbp-docs-code/src/main/java/radicalbit/io/java/FlinkJPMMLQuickstart.java 
+.. literalinclude:: /rbp-docs-code/mvn/src/main/java/radicalbit/io/java/FlinkJPMMLQuickstart.java 
     :language: java
     :caption: Java
     :lines: 36-42
     :name: java-jpmml-file
 
-.. literalinclude:: /rbp-docs-code/src/main/scala/radicalbit/io/scala/FlinkJPMMLQuickstart.scala
+.. literalinclude:: /rbp-docs-code/mvn/src/main/scala/radicalbit/io/scala/FlinkJPMMLQuickstart.scala
     :caption: Scala
     :language: scala
     :lines: 30-32
@@ -35,13 +35,13 @@ First we need to retrieve the PMML file. In this example we will read it from th
 Now we can build a ``JPMMLEvaluationMapOperator``. As you can see from the example, the API for Java and Scala diverge to follow an idiomatic approach for the specific language. Where Scala make use of default values for the constructor, Java uses a builder pattern to specify the desired strategies. In both cases it's not necessary to specify strategies exhaustively but only where the desired behaviour diverges from the default one.
 
 
-.. literalinclude:: /rbp-docs-code/src/main/java/radicalbit/io/java/FlinkJPMMLQuickstart.java 
+.. literalinclude:: /rbp-docs-code/mvn/src/main/java/radicalbit/io/java/FlinkJPMMLQuickstart.java 
     :language: java
     :caption: Java
     :lines: 43-51
     :name: java-jpmml-operator
 
-.. literalinclude:: /rbp-docs-code/src/main/scala/radicalbit/io/scala/FlinkJPMMLQuickstart.scala
+.. literalinclude:: /rbp-docs-code/mvn/src/main/scala/radicalbit/io/scala/FlinkJPMMLQuickstart.scala
     :caption: Scala
     :lines: 33-37
     :language: scala
@@ -50,13 +50,13 @@ Now we can build a ``JPMMLEvaluationMapOperator``. As you can see from the examp
 The operator we just created can now be inserted in a Flink's pipeline through a ``.map()`` call. 
 
 
-.. literalinclude:: /rbp-docs-code/src/main/java/radicalbit/io/java/FlinkJPMMLQuickstart.java 
+.. literalinclude:: /rbp-docs-code/mvn/src/main/java/radicalbit/io/java/FlinkJPMMLQuickstart.java 
     :language: java
     :caption: Java
     :lines: 53-54   
     :name: java-jpmml-map
 
-.. literalinclude:: /rbp-docs-code/src/main/scala/radicalbit/io/scala/FlinkJPMMLQuickstart.scala
+.. literalinclude:: /rbp-docs-code/mvn/src/main/scala/radicalbit/io/scala/FlinkJPMMLQuickstart.scala
     :caption: Scala
     :lines: 39-40
     :language: scala
@@ -64,12 +64,12 @@ The operator we just created can now be inserted in a Flink's pipeline through a
 
 Now you have a ``DataStream`` of the results and you can further process these data as your prefer. Following you can find the whole source of the Flink Job we worked with.  
 
-.. literalinclude:: /rbp-docs-code/src/main/java/radicalbit/io/java/FlinkJPMMLQuickstart.java 
+.. literalinclude:: /rbp-docs-code/mvn/src/main/java/radicalbit/io/java/FlinkJPMMLQuickstart.java 
     :language: java
     :caption: Java
     :name: java-jpmml-complete
 
-.. literalinclude:: /rbp-docs-code/src/main/scala/radicalbit/io/scala/FlinkJPMMLQuickstart.scala
+.. literalinclude:: /rbp-docs-code/mvn/src/main/scala/radicalbit/io/scala/FlinkJPMMLQuickstart.scala
     :caption: Scala
     :name: scala-jpmml-complete
     :language: scala

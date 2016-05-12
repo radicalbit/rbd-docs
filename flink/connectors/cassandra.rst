@@ -43,7 +43,7 @@ Flink can provide exactly-once guarantees if the query is idempotent (meaning it
 
 Furthermore, for non-deterministic programs the write-ahead log has to be enabled. For such a program the replayed checkpoint may be completely different than the previous attempt, which may leave the database in an inconsitent state since part of the first attempt may already be written. The write-ahead log guarantees that the replayed checkpoint is identical to the first attempt. Note that that enabling this feature will have an adverse impact on latency.
 
-.. literalinclude:: /rbp-docs-code/src/main/java/radicalbit/io/java/CassandraConnectorExample.java
+.. literalinclude:: /rbp-docs-code/mvn/src/main/java/radicalbit/io/java/CassandraConnectorExample.java
     :caption: CassandraConnectorExample
     :language: java 
     :name: CassandraConnectorExample

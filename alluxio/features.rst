@@ -18,6 +18,43 @@ since memory capacity may be limited in some deployments.
 With tiered storage, Alluxio automatically manages blocks between all the configured tiers, 
 so users and administrators do not have to manually manage the locations of the data.
 
+=================
+Under File System
+=================
+
+Alluxio relies on some other storage system to safely persist the journal and user data. 
+This is the list of currently supported file systems:
+
+- Local (Unix file system)
+- HDFS
+- S3
+- Swift
+- GlusterFS
+- Furthermore, it is easy to use any other file system extending the alluxio.underfs.UnderFileSystem class.
+
+|fdd| adopt HDFS as the default Alluxio UnderFS
+
+When user creates files in the Alluxio storage, she can choose whether these objects should be persisted in the UnderFS storage or not.
+Similarly, when a file is read from the UnderFS, user can choose to promote it to Alluxio storage or not.
+Those policies are called Write Type and Read Type.
+
+===========
+Write Types
+===========
+
+- MUST_CACHE: Write the file to Alluxio storage or failing the operation.
+- CACHE THROUGH: Write the file synchronously to the under fs, and also try to write Alluxio storage.
+- THROUGH: Write the file synchronously to the UnderFs, skipping Alluxio storage.
+- ASYNC_THROUGH: Write the file asynchronously to the under fs.
+
+==========
+Read Types
+==========
+
+- NO_CACHE: Read the file and skip Alluxio storage. This read type will not cause any data migration or eviction in Alluxio storage.
+- CACHE: Read the file and cache it in the highest tier of a local worker. This read type will not move data between tiers of Alluxio Storage. Users should use CACHE_PROMOTE for more optimized performance with tiered storage.
+- CACHE_PROMOTE: Read the file and cache it in a local worker. Additionally, if the file was in Alluxio storage, it will be promoted to the top storage layer.
+
 =======
 Lineage
 =======

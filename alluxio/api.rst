@@ -1,6 +1,6 @@
-============
+=======================
 Alluxio File System API
-============
+=======================
 
 Alluxio provides access to data through a filesystem interface. 
 Alluxio provides two different Filesystem APIs, a native Java API and a Hadoop compatible API.
@@ -17,7 +17,7 @@ provides a complete set of usage examples.
 
 Here is a further example of how it is possible to load files from different UnderFs.
 
-.. literalinclude:: /rbp-docs-code/src/main/java/radicalbit/io/java/AlluxioAPIExamples.java 
+.. literalinclude:: /rbp-docs-code/mvn/src/main/java/radicalbit/io/java/AlluxioAPIExamples.java 
     :language: java
     :caption: Java
     :name: alluxio-api-example

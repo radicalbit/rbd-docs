@@ -6,8 +6,8 @@ Alluxio Configuration
 |fdd| provide Alluxio with the following configurations
 
 - UnderFS: HDFS is the default UnderFs 
-- Write Type: CACHE_THROUGH
-- Read Type: CACHE_PROMOTE
+- Write Type: `CACHE_THROUGH`
+- Read Type: `CACHE_PROMOTE`
 
 Below a list of all the available configurations.
 See the `official documentation <http://www.alluxio.org/documentation/en/Configuration-Settings.html/>`_ for more details.

@@ -42,26 +42,18 @@ Those policies are called Write Type and Read Type.
 Write Types
 ===========
 
-- MUST_CACHE: Write the file to Alluxio storage or failing the operation.
-- CACHE THROUGH: Write the file synchronously to the under fs, and also try to write Alluxio storage.
-- THROUGH: Write the file synchronously to the UnderFs, skipping Alluxio storage.
-- ASYNC_THROUGH: Write the file asynchronously to the under fs.
+- `MUST_CACHE`: Write the file to Alluxio storage or failing the operation.
+- `CACHE THROUGH`: Write the file synchronously to the under fs, and also try to write Alluxio storage.
+- `THROUGH`: Write the file synchronously to the UnderFs, skipping Alluxio storage.
+- `ASYNC_THROUGH`: Write the file asynchronously to the under fs.
 
 ==========
 Read Types
 ==========
 
-- NO_CACHE: Read the file and skip Alluxio storage. This read type will not cause any data migration or eviction in Alluxio storage.
-- CACHE: Read the file and cache it in the highest tier of a local worker. This read type will not move data between tiers of Alluxio Storage. Users should use CACHE_PROMOTE for more optimized performance with tiered storage.
-- CACHE_PROMOTE: Read the file and cache it in a local worker. Additionally, if the file was in Alluxio storage, it will be promoted to the top storage layer.
-
-=======
-Lineage
-=======
-
-Alluxio can achieve high throughput writes and reads, without compromising fault-tolerance by using Lineage, where lost output is recovered by re-executing the jobs that created the output.
-With lineage, applications write output into memory, and Alluxio periodically checkpoints the output into the under file system in an asynchronous fashion. In case of failures, Alluxio launches job recomputation to restore the lost files. Lineage assumes that jobs are deterministic so that the recomputed outputs are identical. If this assumption is not met, it is up to the application to handle divergent outputs.
-By default, lineage is not enabled. It can be enabled by setting the Alluxio.user.lineage.enabled property to true in the configuration file.
+- `NO_CACHE`: Read the file and skip Alluxio storage. This read type will not cause any data migration or eviction in Alluxio storage.
+- `CACHE`: Read the file and cache it in the highest tier of a local worker. This read type will not move data between tiers of Alluxio Storage. Users should use CACHE_PROMOTE for more optimized performance with tiered storage.
+- `CACHE_PROMOTE`: Read the file and cache it in a local worker. Additionally, if the file was in Alluxio storage, it will be promoted to the top storage layer.
 
 ===================================
 Unified and transparenting naming

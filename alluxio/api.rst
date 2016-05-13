@@ -9,15 +9,18 @@ An example of the Hadoop API can be found :ref:`here<alluxio-hadoop-interface>`.
 
 The native Java API can be included in a Maven Project by adding the following artifact.
 
-.. literalinclude:: /rbp-docs-code/snippets/include-alluxio.xml
+.. literalinclude:: /rbp-docs-code/alluxio/filesystem-api/pom.xml
+    :caption: pom.xml
     :language: xml
+    :lines: 61-63
+    :name: pom.xml  
 
 The `official documentation <http://www.alluxio.org/documentation/en/File-System-API.html#getting-a-filesystem-client/>`_ 
 provides a complete set of usage examples.
 
 Here is a further example of how it is possible to load files from different UnderFs.
 
-.. literalinclude:: /rbp-docs-code/mvn/src/main/java/radicalbit/io/java/AlluxioAPIExamples.java 
+.. literalinclude:: /rbp-docs-code/alluxio/filesystem-api/src/main/java/radicalbit/io/java/AlluxioAPIExamples.java 
     :language: java
     :caption: Java
     :name: alluxio-api-example

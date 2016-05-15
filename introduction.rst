@@ -33,7 +33,7 @@ RBFDD allows implementing data-driven, service-oriented systems, by quickly get 
 Components overview
 -------------------
 
-The following diagram displays the ecosystem of software components in which RBFDD lives; in blue are components part of the distribution, while in green are key components that, while not being provided along with the distribution, represent a key feature item for which integrations (across several dimensions) are provided, or that are otherwise regarded as a first-class citizen in the distribution:
+The following diagram displays the RBFDD ecosystem; in blue are the distribution components, in green are products that have some degree of integration with RBFDD.
 
 .. image:: /img/introduction/blueprint.svg
    :height: 400px

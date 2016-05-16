@@ -5,7 +5,7 @@ Introduction
 Rationale
 ---------
 
-The Radicalbit Fast Data Distribution (RBFDD) is a collection of Open Source (`ASL 2.0-licenced <https://www.apache.org/licenses/LICENSE-2.0.html>`_) software products connecting, leveraging and exploiting data, network, intelligence and computing power.
+The |fdd| (RBFDD) is a collection of Open Source (`ASL 2.0-licenced <https://www.apache.org/licenses/LICENSE-2.0.html>`_) software products connecting, leveraging and exploiting data, network, intelligence and computing power.
 
 RBFDD includes modern, present and future-proof technologies, fully integrated, forming an end-to-end data pipeline computing environment in which a pool of software, leveraging computers collaborating over the network, takes part to solve complex problems in order to achieve a common goal.
 
@@ -35,13 +35,11 @@ Components overview
 
 The following diagram displays the RBFDD ecosystem; in blue are the distribution components, in green are products that have some degree of integration with RBFDD.
 
-.. image:: /img/introduction/blueprint.svg
+.. figure:: /img/introduction/blueprint.svg
    :height: 400px
    :width: 640px
    :alt: RBFDD Blueprint
    :align: center
-
-.
 
 Ambari
 ------
@@ -192,16 +190,8 @@ Features
 * Simple deployment and maintenance
 * Multi-datacenter support
 * Hadoop-compatible
-* File-append support
-* Multiple file systems
-* Tuneable data locality
-* Small files optimization
-* Per-file segment and block size support
-* Sequential and random access to file support
-* Security: native authentication, Kerberos support
-* File watcher notification service
-* Compression
-* Encryption
+* Security: native authentication
+* Predictable scalability
 
 Zeppelin
 --------

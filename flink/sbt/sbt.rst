@@ -5,7 +5,7 @@ Using SBT to create a Flink job
 Motivation
 ----------
 
-Maven is a widely accepted build tool for projects that target the Java platform. The Radicalbit Fast Data Distribution provides an archetype to kickstart your development projects using Maven. Scala developers may find more compelling to use the Maven alternative of choice for the Scala ecosystem, SBT (Simple Build Tool).
+`Maven <https://maven.apache.org/>`_ is a widely accepted build tool for projects that target the Java platform. The Radicalbit Fast Data Distribution provides an archetype to kickstart your development projects using Maven. Scala developers may find more compelling to use the Maven alternative of choice for the Scala ecosystem, `SBT <http://www.scala-sbt.org/>`_ (Simple Build Tool).
 
 Basic 'archetype'
 -----------------

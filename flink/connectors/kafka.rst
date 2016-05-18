@@ -2,6 +2,9 @@
 Kafka Connector
 ===============
 
+Introduction
+------------
+
 Due to its nature, the distributed publish/subscribe Apache Kafka is one of the best matches to read data from and write data to for Flink.
 
 The `official documentation <https://ci.apache.org/projects/flink/flink-docs-release-1.0/apis/streaming/connectors/kafka.html>`_ contains in-depth details on the high level of interoperability between Kafka and Flink.
@@ -12,6 +15,9 @@ To use the connector, you should first of all include the following dependency i
     :caption: pom.xml
     :language: xml
     :lines: 124-128
+
+Security
+--------
 
 RBFDD includes a custom Flink version that allows the user to make the two systems interoperate even on *secure* clusters.
 

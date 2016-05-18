@@ -14,4 +14,5 @@ Connectors
   
    connectors/akka
    connectors/cassandra
+   connectors/kafka
 

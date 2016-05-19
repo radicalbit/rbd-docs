@@ -46,6 +46,8 @@ Now you can create and open src/main/scala/io/radicalbit/flink/batch/BatchJob.sc
     :caption: BatchJob.scala
     :language: scala
 
+If you want to give a try to `this example in particular <https://github.com/radicalbit/rbp-docs-code/blob/master/sbt/src/main/scala/io/radicalbit/flink/batch/BatchJob.scala>`_, you can find the code `on Github <https://github.com/radicalbit/rbp-docs-code/>`_.
+
 You can now run your project by simply typing the following command::
 
     sbt run

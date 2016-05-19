@@ -3,7 +3,7 @@ Alluxio Configuration
 **********************
 
 
-|fdd| provide Alluxio with the following configurations
+|fdd| provides Alluxio with the following configurations:
 
 - UnderFS: HDFS is the default |ufs|
 - Write Type: `CACHE_THROUGH`

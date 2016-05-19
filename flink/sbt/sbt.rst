@@ -38,9 +38,9 @@ Now it's time to actually create the build definition. Open your favorite text e
 
 Once the build definition is ready, create the standard directory structure for SBT project (including a directory hierarchy that mirrors the package structure)::
 
-    mkdir -p src/main/scala/org/example/
+    mkdir -p src/main/scala/io/radicalbit/flink/batch
 
-Now you can create and open src/main/scala/org/example/Job.scala in your favorite text editor and create a simple app to test your build definition:
+Now you can create and open src/main/scala/io/radicalbit/flink/batch/BatchJob.scala in your favorite text editor and create a simple app to test your build definition:
 
 .. literalinclude:: /rbp-docs-code/sbt/src/main/scala/io/radicalbit/flink/batch/BatchJob.scala
     :caption: BatchJob.scala

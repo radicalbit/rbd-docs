@@ -10,6 +10,11 @@ other_substitutions="""
 .. |fdd| replace:: Radicalbit Fast Data Distribution
 """
 
+alluxio_subs="""
+.. |ufs| replace:: under file system
+.. |uss| replace:: underlying storage system
+"""
+
 
 ssl_subs="""
 .. |sslCA| replace:: Certificate Authority (CA)
@@ -29,5 +34,4 @@ cassandra_subs="""
 """
 
 
-all_substitutions=versions_subs+other_substitutions+cassandra_subs+ssl_subs
-
+all_substitutions=versions_subs+other_substitutions+cassandra_subs+ssl_subs+alluxio_subs

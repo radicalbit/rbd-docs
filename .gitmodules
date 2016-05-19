@@ -1,4 +1,4 @@
 [submodule "rbp-docs-code"]
 	path = rbp-docs-code
 	url = https://github.com/radicalbit/rbp-docs-code.git
-	branch = RBFDD-432
+	branch = master

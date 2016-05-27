@@ -1,4 +1,5 @@
 versions_subs="""
+.. |alluxio-version| replace:: 1.0.1
 .. |kafka-version| replace:: 0.9.0.1
 .. |kafka-connector-version| replace:: 0.9
 .. |cassandra-version| replace:: 2.2.5
@@ -7,6 +8,11 @@ versions_subs="""
 
 other_substitutions="""
 .. |fdd| replace:: Radicalbit Fast Data Distribution
+"""
+
+alluxio_subs="""
+.. |ufs| replace:: under file system
+.. |uss| replace:: underlying storage system
 """
 
 
@@ -28,5 +34,4 @@ cassandra_subs="""
 """
 
 
-all_substitutions=versions_subs+other_substitutions+cassandra_subs+ssl_subs
-
+all_substitutions=versions_subs+other_substitutions+cassandra_subs+ssl_subs+alluxio_subs

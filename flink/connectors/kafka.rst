@@ -14,7 +14,7 @@ To use the connector, you should first of all include the following dependency i
 .. literalinclude:: /rbp-docs-code/mvn/pom.xml
     :caption: pom.xml
     :language: xml
-    :lines: 124-128
+    :lines: 120-124
 
 Security
 --------
@@ -29,6 +29,6 @@ The feature is mostly transparent to the client code, the only required step is 
 
 The following program serves as an example of a trivial job using Kafka as both source and sink that can run on a secure cluster as well.
 
-.. literalinclude:: /rbp-docs-code/sbt/src/main/scala/io/radicalbit/flink/kafka/KafkaExample.scala
+.. literalinclude:: /rbp-docs-code/flink/kafka-connector-example/src/main/scala/io/radicalbit/flink/examples/KafkaConnectorExample.scala
     :caption: KafkaExample.scala
     :language: scala

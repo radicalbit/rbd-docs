@@ -3,6 +3,7 @@ versions_subs="""
 .. |kafka-version| replace:: 0.9.0.1
 .. |kafka-connector-version| replace:: 0.9
 .. |cassandra-version| replace:: 2.2.5
+.. |ambari-version| replace:: 2.2.0
 .. |flink-version| replace:: 1.0.1
 """
 
@@ -14,7 +15,6 @@ alluxio_subs="""
 .. |ufs| replace:: under file system
 .. |uss| replace:: underlying storage system
 """
-
 
 ssl_subs="""
 .. |sslCA| replace:: Certificate Authority (CA)
@@ -33,5 +33,9 @@ cassandra_subs="""
 .. |casKrbConf| replace:: ``kerberos.conf``
 """
 
+ambari_subs="""
+.. |rbd-stack| replace:: RBD
+.. |rbd-version| replace:: 1.0
+"""
 
-all_substitutions=versions_subs+other_substitutions+cassandra_subs+ssl_subs+alluxio_subs
+all_substitutions=versions_subs+other_substitutions+cassandra_subs+ssl_subs+ambari_subs+alluxio_subs

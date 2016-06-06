@@ -60,7 +60,7 @@ To include a Kafka Source or a Kafka Sink into your program you will first need 
     :language: xml
     
 .. NOTE::
-   RBP-Antelao distributes only Kafka |kafka-version| and therefore you are advised to use exclusively the one built for Kafka |kafka-connector-version|. 
+   RBD-Antelao distributes only Kafka |kafka-version| and therefore you are advised to use exclusively the one built for Kafka |kafka-connector-version|. 
 
 To discover how to actually use these connector, please refer to the OMISSIS.
 
@@ -77,7 +77,7 @@ Alluxio can be used as any other \*nix filesystem and Flink allows you to use it
 	:language: java
 
 .. NOTE::
-   RBP-Antelao defines Alluxio as the default filesystem so the `alluxio://` scheme is optional and if no scheme is specified, Flink will perform operations on Alluxio.
+   RBD-Antelao defines Alluxio as the default filesystem so the `alluxio://` scheme is optional and if no scheme is specified, Flink will perform operations on Alluxio.
 
 =============================
 Cassandra Database connection

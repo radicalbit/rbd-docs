@@ -1,5 +1,5 @@
 ==============================================================
-How to setup your environment to work on the RBP documentation
+How to setup your environment to work on the RBD documentation
 ==============================================================
 
 

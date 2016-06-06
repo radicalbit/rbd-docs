@@ -21,7 +21,7 @@ At the "Interpreters" menu, you have to create a new Flink interpreter and provi
 |property        | value (example)          |  Description                                                 |
 +----------------+--------------------------+--------------------------------------------------------------+
 |host            | yarn                     | - host name of running JobManager.                           |
-|                |                          | - 'local' runs Flink in local mode (default)                 | 
+|                |                          | - 'local' runs Flink in local mode (default)                 |
 |                |                          | - 'yarn' to attach the interpreter to a running YARN cluster |
 +----------------+--------------------------+--------------------------------------------------------------+
 |port            | 6123                     |  Port of running JobManager, ignored by yarn mode            |
@@ -30,6 +30,7 @@ At the "Interpreters" menu, you have to create a new Flink interpreter and provi
 +----------------+--------------------------+--------------------------------------------------------------+
 |flink.user      | user/runs/flink/service  |  User runs Flink's service (optional)                        |
 +----------------+--------------------------+--------------------------------------------------------------+
+
 Instead of using properties ``flink.conf.dir`` and ``flink-user``, you can use the environments variables ``FLINK_CONF_DIR`` and ``FLINK_USER``.
 
 For more information about Flink configuration, see the official documentation `here <https://ci.apache.org/projects/flink/flink-docs-release-1.0/setup/config.html>`_.

@@ -1,5 +1,5 @@
 ============================================
-How to contribute to RBP documentation - WIP
+How to contribute to RBD documentation - WIP
 ============================================
 
 .. toctree::

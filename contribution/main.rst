@@ -1,10 +1,10 @@
 ==========================================
-How to contribute to the RBP documentation
+How to contribute to the RBD documentation
 ==========================================
 
 .. _rbp-docs-code repository: <https://github.com/radicalbit/rbp-docs>
 
-Steps required before working on the RBP documentation:
+Steps required before working on the RBD documentation:
 
 #. Install Sphinx and the required modules. (:doc:`ref <installation>`)
 #. Clone the repository with the `--recursive` option to initialize the code submodule:
@@ -24,7 +24,7 @@ Just execute the `make clean html` in the root directory of the project document
 How to handle version numbers and frequently-changing references
 ________________________________________________________________
 
-You should use the :file:`rbpsubstitutions.py` file for all the version references of the software used in RBP. Here are defined a list of global substitutions that replace placeholders everywhere in the documentation. Try to name the placeholders with care and try to avoid semantic replication. Create a new substitution only if really necessary.
+You should use the :file:`rbpsubstitutions.py` file for all the version references of the software used in RBD. Here are defined a list of global substitutions that replace placeholders everywhere in the documentation. Try to name the placeholders with care and try to avoid semantic replication. Create a new substitution only if really necessary.
 
 .. note::
 	The way these substitutions work with directives make them usable exclusively inside content blocks.

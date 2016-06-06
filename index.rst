@@ -4,7 +4,7 @@
    contain the root `toctree` directive.
 
 Welcome to Radicalbit Fast Data Distribution's documentation!
-=========================================================
+=============================================================
 
 Contents:
 
@@ -12,9 +12,10 @@ Contents:
    :maxdepth: 2
    :glob:
 
-   introduction   
+   introduction
    installation/*
    quickstart/index-quickstart
+   ambari/*
    kafka/*
    alluxio/alluxio
    cassandra/*

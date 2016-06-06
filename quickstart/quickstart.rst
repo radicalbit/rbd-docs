@@ -62,7 +62,7 @@ To include a Kafka Source or a Kafka Sink into your program you will first need 
 .. NOTE::
    RBD-Antelao distributes only Kafka |kafka-version| and therefore you are advised to use exclusively the one built for Kafka |kafka-connector-version|. 
 
-To discover how to actually use these connector, please refer to the OMISSIS.
+To discover how to actually use this connector, please refer to the following document: :doc:`../flink/connectors/kafka`.
 
 .. _alluxio-hadoop-interface:
 

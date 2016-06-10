@@ -17,7 +17,7 @@ If you forget the `-recursive` flag, you can always do
 
 ::
 
-	cd rbd-docs/
+    cd rbd-docs/
     git submodule init rbd-examples
     git submodule update --remote
 

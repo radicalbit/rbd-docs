@@ -5,11 +5,11 @@ Introduction
 Rationale
 ---------
 
-The |fdd| (RBFDD) is a collection of Open Source (`ASL 2.0-licenced <https://www.apache.org/licenses/LICENSE-2.0.html>`_) software products connecting, leveraging and exploiting data, network, intelligence and computing power.
+The |fdd| (|rbd-stack|) is a collection of Open Source (`ASL 2.0-licenced <https://www.apache.org/licenses/LICENSE-2.0.html>`_) software products connecting, leveraging and exploiting data, network, intelligence and computing power.
 
-RBFDD includes modern, present and future-proof technologies, fully integrated, forming an end-to-end data pipeline computing environment in which a pool of software, leveraging computers collaborating over the network, takes part to solve complex problems in order to achieve a common goal.
+|rbd-stack| includes modern, present and future-proof technologies, fully integrated, forming an end-to-end data pipeline computing environment in which a pool of software, leveraging computers collaborating over the network, takes part to solve complex problems in order to achieve a common goal.
 
-RBFDD is a seamlessly integrated computing layer enabling organizations to develop and run business logic such as:
+|rbd-stack| is a seamlessly integrated computing layer enabling organizations to develop and run business logic such as:
 
 * statistical analysis
 * predictive and prescriptive analysis
@@ -24,11 +24,11 @@ RBFDD is a seamlessly integrated computing layer enabling organizations to devel
 
 in a fast, event-driven, scalable, resilient, secure, highly available and integrated environment.
 
-RBFDD supports both batch, long-running jobs, and streaming, pure real-time processing, leveraging concepts such as parallel, distributed, and in-memory computing in order to process massive amount of data and workload at speed.
+|rbd-stack| supports both batch, long-running jobs, and streaming, pure real-time processing, leveraging concepts such as parallel, distributed, and in-memory computing in order to process massive amount of data and workload at speed.
 
-RBFDD acts as a computing layer, service or ingestion at your will, providing organizations the ability to develop, integrate and deploy services requiring complex calculations, data intensive computation or real-time processing.
+|rbd-stack| acts as a computing layer, service or ingestion at your will, providing organizations the ability to develop, integrate and deploy services requiring complex calculations, data intensive computation or real-time processing.
 
-RBFDD allows implementing data-driven, service-oriented systems, by quickly get up and running with one of the most advanced piece of software technology currently available on the market.
+|rbd-stack| allows implementing data-driven, service-oriented systems, by quickly get up and running with one of the most advanced piece of software technology currently available on the market.
 
 Components overview
 -------------------

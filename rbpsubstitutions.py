@@ -8,7 +8,7 @@ versions_subs="""
 """
 
 other_substitutions="""
-.. |fdd| replace:: Radicalbit Fast Data Distribution
+.. |fdd| replace:: Radicalbit Distribution
 """
 
 alluxio_subs="""

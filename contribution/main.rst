@@ -11,9 +11,15 @@ Steps required before working on the RBD documentation:
 
 ::
 
-	git clone --recursive https://github.com/radicalbit/rbp-docs.git
+	git clone --recursive https://github.com/radicalbit/rbd-docs.git
 
+If you forget the `-recursive` flag, you can always do
 
+::
+
+	cd rbd-docs/
+    git submodule init rbd-examples
+    git submodule update --remote
 
 How to build the documentation in HTML
 ______________________________________

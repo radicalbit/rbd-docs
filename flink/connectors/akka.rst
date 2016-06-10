@@ -9,7 +9,7 @@ This connector provides sink that sends data to a remote actor.
 
 To use this connector, add the following dependency to your project:
 
-.. literalinclude:: /rbp-docs-code/flink/akka-connector-example/build.sbt
+.. literalinclude:: /rbd-examples/flink/akka-connector-example/build.sbt
     :caption: build.sbt
     :language: xml
     :lines: 17
@@ -31,12 +31,12 @@ The AkkaSink expected the following arguments:
 Example
 --------
 
-.. literalinclude:: /rbp-docs-code/flink/akka-connector-example/src/main/scala/io/radicalbit/AkkaReceiverExample.scala
+.. literalinclude:: /rbd-examples/flink/akka-connector-example/src/main/scala/io/radicalbit/AkkaReceiverExample.scala
    :caption: AkkaReceiverExample
    :language: scala
    :name: AkkaReceiverExample
 
-.. literalinclude:: /rbp-docs-code/flink/akka-connector-example/src/main/scala/io/radicalbit/AkkaSinkExample.scala
+.. literalinclude:: /rbd-examples/flink/akka-connector-example/src/main/scala/io/radicalbit/AkkaSinkExample.scala
    :caption: AkkaSinkExample
    :language: scala
    :name: AkkaSinkExample

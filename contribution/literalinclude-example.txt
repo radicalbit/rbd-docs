@@ -1,4 +1,4 @@
-.. literalinclude:: /rbp-docs-code/src/main/java/radicalbit/io/java/QuickstartFirstJob.java
+.. literalinclude:: /rbd-examples/src/main/java/radicalbit/io/java/QuickstartFirstJob.java
     :language: java
     :caption: Java
     :name: quick-java

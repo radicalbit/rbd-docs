@@ -5,7 +5,7 @@ Quickstart
 
 In order to include those repository in a Maven project, the following directive must be added to project's pom.xml.
 
-.. literalinclude:: /rbp-docs-code/snippets/rbp-repository.xml
+.. literalinclude:: /rbd-examples/snippets/rbp-repository.xml
     :language: xml
 
 

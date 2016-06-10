@@ -26,13 +26,13 @@ Then, move into the directory and create a project directory::
 
 To package our application, we'll use the ``sbt-assembly`` plugin. To add it to our build, create and open in your favorite text editor the ``project/assembly.sbt`` file and fill it in with this single line:
 
-.. literalinclude:: /rbp-docs-code/flink/sbt-basic-examples/project/assembly.sbt
+.. literalinclude:: /rbd-examples/flink/sbt-basic-examples/project/assembly.sbt
     :caption: assembly.sbt
     :language: scala
 
 Now it's time to actually create the build definition. Open your favorite text editor and type in the following text:
 
-.. literalinclude:: /rbp-docs-code/flink/sbt-basic-examples/build.sbt
+.. literalinclude:: /rbd-examples/flink/sbt-basic-examples/build.sbt
     :caption: build.sbt
     :language: scala
 
@@ -42,11 +42,11 @@ Once the build definition is ready, create the standard directory structure for 
 
 Now you can create and open src/main/scala/io/radicalbit/flink/batch/BatchJob.scala in your favorite text editor and create a simple app to test your build definition:
 
-.. literalinclude:: /rbp-docs-code/flink/sbt-basic-examples/src/main/scala/io/radicalbit/flink/examples/BatchExample.scala
+.. literalinclude:: /rbd-examples/flink/sbt-basic-examples/src/main/scala/io/radicalbit/flink/examples/BatchExample.scala
     :caption: BatchJob.scala
     :language: scala
 
-If you want to give a try to `this example in particular <https://github.com/radicalbit/rbp-docs-code/blob/master/flink/sbt-basic-examples/src/main/scala/io/radicalbit/flink/examples/BatchExample.scala>`_, you can find the code `on Github <https://github.com/radicalbit/rbp-docs-code/>`_.
+If you want to give a try to `this example in particular <https://github.com/radicalbit/rbd-examples/blob/master/flink/sbt-basic-examples/src/main/scala/io/radicalbit/flink/examples/BatchExample.scala>`_, you can find the code `on Github <https://github.com/radicalbit/rbd-examples/>`_.
 
 You can now run your project by simply typing the following command::
 

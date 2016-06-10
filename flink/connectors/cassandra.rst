@@ -9,7 +9,7 @@ This connector provides sinks that writes data into a Cassandra database.
 
 To use this connector, add the following dependency to your project:
 
-.. literalinclude:: /rbp-docs-code/flink/cassandra-connector-example/pom.xml
+.. literalinclude:: /rbd-examples/flink/cassandra-connector-example/pom.xml
     :caption: pom.xml
     :language: xml
     :lines: 89-93
@@ -43,7 +43,7 @@ Flink can provide exactly-once guarantees if the query is idempotent (meaning it
 
 Furthermore, for non-deterministic programs the write-ahead log has to be enabled. For such a program the replayed checkpoint may be completely different than the previous attempt, which may leave the database in an inconsitent state since part of the first attempt may already be written. The write-ahead log guarantees that the replayed checkpoint is identical to the first attempt. Note that that enabling this feature will have an adverse impact on latency.
 
-.. literalinclude:: /rbp-docs-code/flink/cassandra-connector-example/src/main/java/io/radicalbit/CassandraConnectorExample.java
+.. literalinclude:: /rbd-examples/flink/cassandra-connector-example/src/main/java/io/radicalbit/CassandraConnectorExample.java
     :caption: CassandraConnectorExample
     :language: java 
     :name: CassandraConnectorExample

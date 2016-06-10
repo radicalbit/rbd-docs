@@ -1,6 +1,5 @@
 repositories={
-'snippet-repo': 'rbp-docs-code/snippets',
-'java-repo': 'rbp-docs-code/src/main/java/radicalbit/io/java',
-'scala-repo': 'rbp-docs-code/src/main/scala/radicalbit/io/scala'
+'snippet-repo': 'rbp-examples/snippets',
+'java-repo': 'rbp-examples/src/main/java/radicalbit/io/java',
+'scala-repo': 'rbp-examples/src/main/scala/radicalbit/io/scala'
 }
-

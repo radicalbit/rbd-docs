@@ -2,7 +2,7 @@
 How to contribute to the RBD documentation
 ==========================================
 
-.. _rbp-docs-code repository: <https://github.com/radicalbit/rbp-docs>
+.. _rbd-examples repository: <https://github.com/radicalbit/rbp-docs>
 
 Steps required before working on the RBD documentation:
 
@@ -34,7 +34,7 @@ How to include code
 ___________________
 
 #. Correctly initialize the code submodule (:doc:`ref<installation>`).
-#. Commit your code to the `rbp-docs-code repository`_ or to the internal submodule in the :file:`rbp-docs-code` directory. Use the *snippets/* directory for scripts, short pieces of code and anything that doesn't require a proper verification and compilation. Use the *src/* directory for everything else.
+#. Commit your code to the `rbd-examples repository`_ or to the internal submodule in the :file:`rbd-examples` directory. Use the *snippets/* directory for scripts, short pieces of code and anything that doesn't require a proper verification and compilation. Use the *src/* directory for everything else.
 #. Use the `literalinclude` directive (`ref <http://www.sphinx-doc.org/en/stable/markup/code.html#directive-literalinclude>`_) to include your code.
 
 
@@ -49,7 +49,7 @@ ___________________
 How code submodule works
 ________________________
 
-The :file:`rbp-docs-code` directory contains a git submodule referencing a repository containing all the code snippets and examples. To better understand how git submodules, please refer to `Git Documentation <https://git-scm.com/docs/git-submodule>`_. Submodules are a powerful yet complex tool to handle dependencies between repositories. They are managed as independent entities by Git and their behavior often differs to the expected behaviors of regular subdirectories. So take your time to learn how to work with both repositories at the same time. To contribute to this documentation a few predefined actions are provided as simple scripts to support your operativity.
+The :file:`rbd-examples` directory contains a git submodule referencing a repository containing all the code snippets and examples. To better understand how git submodules, please refer to `Git Documentation <https://git-scm.com/docs/git-submodule>`_. Submodules are a powerful yet complex tool to handle dependencies between repositories. They are managed as independent entities by Git and their behavior often differs to the expected behaviors of regular subdirectories. So take your time to learn how to work with both repositories at the same time. To contribute to this documentation a few predefined actions are provided as simple scripts to support your operativity.
 
 Every branch of the parent repository is bound to a matching branch of the code repository. This is done through the ``-b branch-name`` option of the ``git submodule add`` command. If you want to create a new branch in the parent directory and bind it to a related branch in the code repository, this procedure is strongly suggested:
 
@@ -59,13 +59,13 @@ Every branch of the parent repository is bound to a matching branch of the code 
 	git checkout recently-created-parent-branch
 
 	//Then de-initialize the submodule
-	git submodule deinit rbp-docs-code
+	git submodule deinit rbd-examples
 
 	//Remove it from the index
-	git rm rbp-docs-code
+	git rm rbd-examples
 
 	//Re-add it with a new branch
-	git submodule add --force -b new-code-branch-name https://github.com/radicalbit/rbp-docs-code.git
+	git submodule add --force -b new-code-branch-name https://github.com/radicalbit/rbd-examples.git
 
 	//Update the submodule with remote changes from the correct branch
 	git submodule update --remote

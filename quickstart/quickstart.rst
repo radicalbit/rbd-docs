@@ -11,11 +11,11 @@ Create your project
 The first step required is to use our Maven archetype to create a new project.
     
 
-.. literalinclude:: /rbp-docs-code/snippets/mvn-archetype-java.rst 
+.. literalinclude:: /rbd-examples/snippets/mvn-archetype-java.rst 
     :language: text
     :caption: Java
 
-.. literalinclude:: /rbp-docs-code/snippets/mvn-archetype-scala.rst
+.. literalinclude:: /rbd-examples/snippets/mvn-archetype-scala.rst
     :caption: Scala
     :language: text
 
@@ -27,12 +27,12 @@ A simple Flink Job
 
 Now we can go through a simple Flink Job that will introduce you to the basic structure of a Flink Job. Here is an example of a Job that takes a stream of strings as an input, process them and then prints them to console.
 
-.. literalinclude:: /rbp-docs-code/mvn/src/main/java/radicalbit/io/java/QuickstartFirstJob.java
+.. literalinclude:: /rbd-examples/mvn/src/main/java/radicalbit/io/java/QuickstartFirstJob.java
     :language: java
     :caption: Java
     :name: quick-java
 
-.. literalinclude:: /rbp-docs-code/mvn/src/main/scala/radicalbit/io/scala/QuickstartFirstJob.scala
+.. literalinclude:: /rbd-examples/mvn/src/main/scala/radicalbit/io/scala/QuickstartFirstJob.scala
     :language: scala
     :caption: Scala
     :name: quick-scala
@@ -56,7 +56,7 @@ Kafka Integration
 To include a Kafka Source or a Kafka Sink into your program you will first need to include the dependency in your :file:`pom.xml` file. The package :file:`kafka-connector` includes all that is necessary to connect a streaming job to Kafka, to process and publish on a Kafka topic.
 
 
-.. literalinclude:: /rbp-docs-code/snippets/include-kafka.xml
+.. literalinclude:: /rbd-examples/snippets/include-kafka.xml
     :language: xml
     
 .. NOTE::
@@ -73,7 +73,7 @@ Read and Write from and to Alluxio
 Alluxio can be used as any other \*nix filesystem and Flink allows you to use it as an ordinary filesystem. To write and read from and to Alluxio it is enough to prepend the dedicated file scheme :file:`alluxio://` to the path.  
 
 
-.. literalinclude:: /rbp-docs-code/snippets/alluxio-example.rst
+.. literalinclude:: /rbd-examples/snippets/alluxio-example.rst
 	:language: java
 
 .. NOTE::
@@ -85,7 +85,7 @@ Cassandra Database connection
 
 Flink offers a dedicated `CassandraInputFormat` and `CassandraOutputFormat` to be used to read and write data in batch mode and to write data in streaming mode. These classes are included in the :file:`connector-cassandra` package and you will need to add it to the dependencies in your :file:`pom.xml` file.
 
-.. literalinclude:: /rbp-docs-code/snippets/include-cassandra.xml
+.. literalinclude:: /rbd-examples/snippets/include-cassandra.xml
 	:language: xml
 
 For a more detailed guide to use the Cassandra Connectors, please refer to the OMISSIS.

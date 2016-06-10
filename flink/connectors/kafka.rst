@@ -11,7 +11,7 @@ The `official documentation <https://ci.apache.org/projects/flink/flink-docs-rel
 
 To use the connector, you should first of all include the following dependency in your project's POM:
 
-.. literalinclude:: /rbp-docs-code/mvn/pom.xml
+.. literalinclude:: /rbd-examples/mvn/pom.xml
     :caption: pom.xml
     :language: xml
     :lines: 120-124
@@ -29,6 +29,6 @@ The feature is mostly transparent to the client code, the only required step is 
 
 The following program serves as an example of a trivial job using Kafka as both source and sink that can run on a secure cluster as well.
 
-.. literalinclude:: /rbp-docs-code/flink/kafka-connector-example/src/main/scala/io/radicalbit/flink/examples/KafkaConnectorExample.scala
+.. literalinclude:: /rbd-examples/flink/kafka-connector-example/src/main/scala/io/radicalbit/flink/examples/KafkaConnectorExample.scala
     :caption: KafkaExample.scala
     :language: scala

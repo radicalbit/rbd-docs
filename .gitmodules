@@ -1,0 +1,4 @@
+[submodule "rbd-examples"]
+	path = rbd-examples
+	url = https://github.com/radicalbit/rbd-examples
+	branch = master

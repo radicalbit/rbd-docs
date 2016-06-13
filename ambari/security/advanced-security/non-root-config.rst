@@ -69,7 +69,7 @@ This section contains the ``su`` commands and corresponding |rbd-stack| service 
 
 .. Note::
   These user accounts must match the service user accounts referenced in the ``Customize Services > Misc`` tab during the Install Wizard configuration step.
-  For example, if you customize YARN to run as ``xyz_yarn``, modify the su command above to be ``/bin/su xyz_yarn``.
+  For example, if you customize HDFS to run as ``xyz_hdfs``, modify the su command above to be ``/bin/su xyz_hdfs``.
 
 .. _ambari-commands:
 

@@ -5,7 +5,7 @@ Use ``Services`` to monitor and manage selected services running in your |rbd-st
 
 All services installed in your cluster are listed in the leftmost ``Services`` panel.
 
-.. image:: /img/ambari/yarn_dashboard.png
+.. image:: /img/ambari/hdfs_dashboard.png
 
 Services supports the following tasks:
 
@@ -15,7 +15,6 @@ Services supports the following tasks:
 * :ref:`Performing Service Actions<ambari-perform-service-action>`
 * :ref:`Viewing Summary, Alert, and Health Information<ambari-service-summary-alerts>`
 * :ref:`Rolling Restarts<ambari-rolling-restart>`
-* :ref:`Refreshing YARN Capacity Scheduler<ambari-yarn-capacity-scheduler>`
 * :ref:`Rebalancing HDFS<ambari-rebalancing-hdfs>`
 
 .. _ambari-start-stop-services:
@@ -80,7 +79,7 @@ Depending on the Service, the Summary tab includes a Metrics section which is by
 This section of Metrics is customizable. You can add and remove widgets from the Dashboard as well as create new widgets. Widgets can be private only to you and your dashboard or shared in a Widget Browser library for other Ambari users to add/remove the widget from their Dashboard.
 
 .. Important::
-  You must have the Ambari Metrics service installed to be able to view, create, and customize the Service Dashboard. Only HDFS and YARN have customizable service dashboards.
+  You must have the Ambari Metrics service installed to be able to view, create, and customize the Service Dashboard. Only HDFS have customizable service dashboards.
 
 **Adding or Removing a Widget**
 
@@ -224,24 +223,6 @@ Rolling restart parameter values must satisfy the following criteria:
 To abort future restart operations in the batch, choose Abort Rolling Restart.
 
 .. image:: /img/ambari/abort_rllng_restart_option.png
-
-.. _ambari-yarn-capacity-scheduler:
-
-Refreshing YARN Capacity Scheduler
-__________________________________
-
-After you modify the Capacity Scheduler configuration, YARN supports refreshing the queues without requiring you to restart your ResourceManager. The “refresh” operation is valid if you have made no destructive changes to your configuration. Removing a queue is an example of a destructive change.
-
-To refresh the Capacity Scheduler:
-
-#. In Ambari Web, browse to ``Services > YARN > Summary``.
-#. Select ``Service Actions``, then choose ``Refresh YARN Capacity Scheduler``.
-#. Confirm you would like to perform this operation.
-
-  The refresh operation is submitted to the YARN ResourceManager.
-
-  .. Important::
-    The Refresh operation will fail with the following message: “Failed to re-init queues” if you attempt to refresh queues in a case where you performed a destructive change, such as removing a queue. In cases where you have made destructive changes, you must perform a ResourceManager restart for the capacity scheduler change to take effect.
 
 .. _ambari-rebalancing-hdfs:
 

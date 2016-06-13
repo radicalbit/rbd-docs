@@ -30,7 +30,7 @@ After editing and saving a service configuration, Restart indicates components t
 
 Select the Components or Hosts links to view details about components or hosts requiring a restart.
 
-Then, choose an option appearing in Restart. For example, options to restart YARN components include:
+Then, choose an option appearing in Restart. For example, options to restart HDFS components include:
 
 .. image:: /img/ambari/restart_options.png
 

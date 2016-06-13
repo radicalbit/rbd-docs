@@ -1,7 +1,8 @@
 Monitoring and Managing Your Cluster
 ====================================
 
-This topic describes how to use Ambari Web features to monitor and manage your |rbd-stack| cluster. To navigate, select one of the following feature tabs located at the top of the Ambari main window.
+This topic describes how to use Ambari Web features to monitor and manage your |rbd-stack| cluster.
+To navigate, select one of the following feature tabs located at the top of the Ambari main window.
 
 * :ref:`Viewing the Cluster Dashboard<ambari-view-cluster-dashboard>`
 * :ref:`Modifying the Cluster Dashboard<ambari-modify-cluster-dashboard>`
@@ -12,7 +13,13 @@ This topic describes how to use Ambari Web features to monitor and manage your |
 Viewing the Cluster Dashboard
 _____________________________
 
-Ambari Web displays the Dashboard page as the home page. Use the Dashboard to view the operating status of your cluster. Each metrics widget displays status information for a single service in your |rbd-stack| cluster. The Dashboard displays all metrics for the HDFS, YARN, HBase, and Storm services, and cluster-wide metrics by default. You can add and remove individual widgets, and rearrange the Dashboard by dragging and dropping each widget to a new location in the dashboard. Status information appears as simple pie and bar charts, more complex charts showing usage and load, sets of links to additional data sources, and values for operating parameters such as uptime and average RPC queue wait times. Most widgets display a single fact by default. For example, HDFS Disk Usage displays a load chart and a percentage figure.
+Ambari Web displays the Dashboard page as the home page. Use the Dashboard to view the operating status of your cluster.
+Each metrics widget displays status information for a single service in your |rbd-stack| cluster.
+The Dashboard displays all metrics for the HDFS service, and cluster-wide metrics by default.
+You can add and remove individual widgets, and rearrange the Dashboard by dragging and dropping each widget to a new location in the dashboard.
+Status information appears as simple pie and bar charts, more complex charts showing usage and load, sets of links to additional data sources, and values for operating parameters such as uptime and average RPC queue wait times.
+Most widgets display a single fact by default.
+For example, HDFS Disk Usage displays a load chart and a percentage figure.
 
 .. image:: /img/ambari/Ambari_dashboard.png
 
@@ -21,7 +28,10 @@ Ambari Web displays the Dashboard page as the home page. Use the Dashboard to vi
 
 **Scanning Service Status**
 
-Notice the color of the dot appearing next to each component name in a list of components, services or hosts. The dot color and blinking action indicates operating status of each component, service, or host. For example, in the :ref:`Summary View<ambari-service-summary-alerts>`, notice green dot next to each service name. The following colors and actions indicate service status:
+Notice the color of the dot appearing next to each component name in a list of components, services or hosts.
+The dot color and blinking action indicates operating status of each component, service, or host.
+For example, in the :ref:`Summary View<ambari-service-summary-alerts>`, notice green dot next to each service name.
+The following colors and actions indicate service status:
 
 +----------------+------------------------------+
 | Color          | Status                       |
@@ -39,11 +49,14 @@ Click the service name to open the Services screen, where you can see more detai
 
 **Widget Descriptions**
 
-View Metrics that indicate the operating status of your cluster on the Ambari Dashboard. Each metrics widget displays status information for a single service in your |rbd-stack| cluster. The Ambari Dashboard displays all metrics for the HDFS, YARN and cluster-wide metrics by default.
+View Metrics that indicate the operating status of your cluster on the Ambari Dashboard.
+Each metrics widget displays status information for a single service in your |rbd-stack| cluster.
+The Ambari Dashboard displays all metrics for HDFS and cluster-wide metrics by default.
 
 You can add and remove individual widgets, and rearrange the dashboard by dragging and dropping each widget to a new location in the dashboard.
 
-Status information appears as simple pie and bar charts, more complex charts showing usage and load, sets of links to additional data sources, and values for operating parameters such as uptime and average RPC queue wait times. Most widgets display a single fact by default.
+Status information appears as simple pie and bar charts, more complex charts showing usage and load, sets of links to additional data sources, and values for operating parameters such as uptime and average RPC queue wait times.
+Most widgets display a single fact by default.
 
 **Widget Details**
 
@@ -58,7 +71,8 @@ More detailed information about the service displays, as shown in the following 
 
 **Linking to Service UIs**
 
-The HDFS Links widget list |rbd-stack| components for which links to more metrics information, such as thread stacks, logs and native component UIs are available. For example, you can link to NameNode, Secondary NameNode, and DataNode components for HDFS, using the links shown in the following example:
+The HDFS Links widget list |rbd-stack| components for which links to more metrics information, such as thread stacks, logs and native component UIs are available.
+For example, you can link to NameNode, Secondary NameNode, and DataNode components for HDFS, using the links shown in the following example:
 
 .. image:: /img/ambari/HDFS_widget_links.png
 
@@ -159,7 +173,12 @@ Heatmaps provides a graphical representation of your overall cluster utilization
 
 .. image:: /img/ambari/cluster_heatmaps.png
 
-A colored block represents each host in your cluster. To see more information about a specific host, hover over the block representing the host in which you are interested. A pop-up window displays metrics about |rbd-stack| components installed on that host. Colors displayed in the block represent usage in a unit appropriate for the selected set of metrics. If any data necessary to determine state is not available, the block displays "Invalid Data". Changing the default maximum values for the heatmap lets you fine tune the representation. Use the Select Metric drop-down to select the metric type.
+A colored block represents each host in your cluster. To see more information about a specific host, hover over the block representing the host in which you are interested.
+A pop-up window displays metrics about |rbd-stack| components installed on that host.
+Colors displayed in the block represent usage in a unit appropriate for the selected set of metrics.
+If any data necessary to determine state is not available, the block displays "Invalid Data".
+Changing the default maximum values for the heatmap lets you fine tune the representation.
+Use the Select Metric drop-down to select the metric type.
 
 .. image:: /img/ambari/cluster_heatmaps_select_metrics.png
 
@@ -182,12 +201,3 @@ Heatmaps supports the following metrics:
 +------------------------------+----------------------------------------+
 | HDFS/JVM Heap MemoryUsed     | jvm.memHeapUsedM                       |
 +------------------------------+----------------------------------------+
-| YARN/Garbage Collection Time | jvm.gcTimeMillis                       |
-+------------------------------+----------------------------------------+
-| YARN / JVM Heap Memory Used  | jvm.memHeapUsedM                       |
-+------------------------------+----------------------------------------+
-| YARN / Memory used %         | UsedMemoryMB and AvailableMemoryMB     |
-+------------------------------+----------------------------------------+
-
-
-YARN / JVM Heap Memory Used

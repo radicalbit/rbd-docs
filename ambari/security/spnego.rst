@@ -2,7 +2,7 @@ Enabling SPNEGO Authentication for Hadoop
 =========================================
 
 By default, access to the HTTP-based services and UI’s for the cluster are not configured to require authentication.
-Kerberos authentication can be configured for the Web UIs for HDFS and YARN.
+Kerberos authentication can be configured for the Web UI for HDFS.
 
 .. _ambari-configure-authenticated-http:
 
@@ -12,10 +12,13 @@ ______________________________________________
 In order for Ambari to work with a cluster in which authenticated HTTP access to the Web UI’s is required, you must configure the Ambari Server for Kerberos.
 Refer to :doc:`Set Up Kerberos for Ambari Server for more information<advanced-security/ambari-server-kerberos>`.
 
-Configuring HTTP Authentication for HDFS and YARN
+Configuring HTTP Authentication for HDFS
 _________________________________________________
 
-1. Create a secret key used for signing authentication tokens. This file should contain random data and be placed on every host in the cluster. It should also be owned by the hdfs user and group owned by the rbp-services group. Permissions should be set to 440. For example:
+1. Create a secret key used for signing authentication tokens.
+This file should contain random data and be placed on every host in the cluster.
+It should also be owned by the hdfs user and group owned by the rbp-services group.
+Permissions should be set to 440. For example:
 
   ::
 

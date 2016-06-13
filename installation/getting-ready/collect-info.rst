@@ -16,7 +16,6 @@ Before deploying an |rbd-stack| cluster, you should collect the following inform
   * NameNode data
   * DataNodes data
   * Secondary NameNode data
-  * YARN data
   * Cassandra data
   * Alluxio data
   * ZooKeeper data, if you install ZooKeeper

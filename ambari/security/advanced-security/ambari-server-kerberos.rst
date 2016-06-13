@@ -1,7 +1,7 @@
 Optional: Set Up Kerberos for Ambari Server
 ===========================================
 
-When a cluster is enabled for Kerberos, the component REST endpoints (such as the YARN ATS component) require :doc:`SPNEGO</ambari/security/spnego>` authentication.
+When a cluster is enabled for Kerberos, the component REST endpoints require :doc:`SPNEGO</ambari/security/spnego>` authentication.
 
 Depending on the Services in your cluster, Ambari Web needs access to these APIs.
 Therefore, the Ambari Server requires a Kerberos principal in order to authenticate via SPNEGO against these APIs.

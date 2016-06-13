@@ -8,6 +8,5 @@ Ambari provides the ability to configure the High Availability features availabl
    :glob:
 
    namenode-ha.rst
-   resourcemanager-ha.rst
 
 

@@ -46,9 +46,6 @@ Below the list of all service users and service groups:
 +----------------+---------------------------------+----------------------+
 | PostgreSQL     | | PostgreSQL (Ambari Server)    | postgres             |
 +----------------+---------------------------------+----------------------+
-| YARN           | | NodeManager                   | yarn                 |
-|                | | ResourceManager               |                      |
-+----------------+---------------------------------+----------------------+
 | Zeppelin       | | Zeppelin Notebook             | zeppelin             |
 +----------------+---------------------------------+----------------------+
 

@@ -97,14 +97,13 @@ You can use the following steps to configure Hadoop to use LDAP-based group mapp
       <value>cn</value>
     </property>
 
-2. Depending on your configuration, you may be able to refresh user and group mappings using the following HDFS and YARN commands:
+2. Depending on your configuration, you may be able to refresh user and group mappings using the following HDFS commands:
 
   ::
 
     hdfs dfsadmin -refreshUserToGroupsMappings
-    yarn rmadmin -refreshUserToGroupsMappings
 
-  If a restart is required, you can use the applicable instructions on :doc:`this</ambari/user-guide/manage-services>` page to re-start the HDFS NameNode and the YARN ResourceManager.
+  If a restart is required, you can use the applicable instructions on :doc:`this</ambari/user-guide/manage-services>` page to re-start the HDFS NameNode.
 
 3. Verify LDAP group mapping by running the ``hdfs groups`` command. This command will fetch groups from LDAP for the current user. Note that with LDAP group mapping configured, the HDFS permissions can leverage groups defined in LDAP for access control.
 

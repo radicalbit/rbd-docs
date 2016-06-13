@@ -1,7 +1,9 @@
 Managing Hosts
 ==============
 
-Use Ambari Hosts to manage multiple |rbd-stack| components such as DataNodes, NameNodes, CassandraNodes and AlluxioNodes, running on hosts throughout your cluster. For example, you can restart all DataNode components, optionally controlling that task with rolling restarts. Ambari Hosts supports filtering your selection of host components, based on operating status, host health, and defined host groupings.
+Use Ambari Hosts to manage multiple |rbd-stack| components such as DataNodes, NameNodes, CassandraNodes and AlluxioNodes, running on hosts throughout your cluster.
+For example, you can restart all DataNode components, optionally controlling that task with rolling restarts.
+Ambari Hosts supports filtering your selection of host components, based on operating status, host health, and defined host groupings.
 
 * :ref:`Working with Hosts<ambari-working-with-hosts>`
 * :ref:`Determining Host Status<ambari-determining-host-status>`
@@ -38,7 +40,10 @@ A colored dot beside each host name indicates operating status of each host, as 
 * Yellow - Ambari Server has not received a heartbeat from that host for more than 3 minutes.
 * Green - Normal running state.
 
-A red condition flag overrides an orange condition flag, which overrides a yellow condition flag. In other words, a host having a master component down may also have other issues. The following example shows three hosts, one having a master component down, one having a slave component down, and one healthy. Warning indicators appear next to hosts having a component down.
+A red condition flag overrides an orange condition flag, which overrides a yellow condition flag.
+In other words, a host having a master component down may also have other issues.
+The following example shows three hosts, one having a master component down, one having a slave component down, and one healthy.
+Warning indicators appear next to hosts having a component down.
 
 .. image:: /img/ambari/hosts_statuses.png
 
@@ -47,11 +52,16 @@ A red condition flag overrides an orange condition flag, which overrides a yello
 Filtering the Hosts List
 ________________________
 
-Use Filters to limit listed hosts to only those having a specific operating status. The number of hosts in your cluster having a listed operating status appears after each status name, in parenthesis. For example, the following cluster has one host having healthy status and three hosts having Maintenance Mode turned on.
+Use Filters to limit listed hosts to only those having a specific operating status.
+The number of hosts in your cluster having a listed operating status appears after each status name, in parenthesis.
+For example, the following cluster has one host having healthy status and three hosts having Maintenance Mode turned on.
 
 .. image:: /img/ambari/hosts_filter_icons.png
 
-For example, to limit the list of hosts appearing on Hosts home to only those with Healthy status, select Filters, then choose the Healthy option. In this case, one host name appears on Hosts home. Alternatively, to limit the list of hosts appearing on Hosts home to only those having Maintenance Mode on, select Filters, then choose the Maintenance Mode option. In this case, three host names appear on Hosts home.
+For example, to limit the list of hosts appearing on Hosts home to only those with Healthy status, select Filters, then choose the Healthy option.
+In this case, one host name appears on Hosts home.
+Alternatively, to limit the list of hosts appearing on Hosts home to only those having Maintenance Mode on, select Filters, then choose the Maintenance Mode option.
+In this case, three host names appear on Hosts home.
 
 Use the general filter tool to apply specific search and sort criteria that limits the list of hosts appearing on the Hosts page.
 
@@ -83,20 +93,23 @@ For example, to restart DataNodes on one host:
 Viewing Components on a Host
 ____________________________
 
-To manage components running on a specific host, choose a FQDN on the Hosts page.To manage components running on a specific host, choose a FQDN on the Hosts page.
+To manage components running on a specific host, choose a FQDN on the Hosts page.
 
 .. image:: /img/ambari/ambari_host_detail.png
 
 Choose options in ``Host Actions``, to start, stop, restart, delete, or turn on maintenance mode for all components installed on the selected host.
 
-Alternatively, choose action options from the drop-down menu next to an individual component on a host. The drop-down menu shows current operation status for each component.
+Alternatively, choose action options from the drop-down menu next to an individual component on a host.
+The drop-down menu shows current operation status for each component.
 
 .. _ambari-decommissioning-masters-slaves:
 
 Decommissioning Masters and Slaves
 __________________________________
 
-Decommissioning is a process that supports removing a component from the cluster. You must decommission a master or slave running on a host before removing the component or host from service. Decommissioning helps prevent potential loss of data or service disruption. Decommissioning is available for the following component types:
+Decommissioning is a process that supports removing a component from the cluster.
+You must decommission a master or slave running on a host before removing the component or host from service.
+Decommissioning helps prevent potential loss of data or service disruption. Decommissioning is available for the following component types:
 
 * DataNodes
 * NodeManagers
@@ -144,7 +157,7 @@ Deleting a host removes the host from the cluster. Before deleting a host, you m
 
 * Stop all components running on the host.
 * Decommission any DataNodes running on the host.
-* Move from the host any master components, such as NameNode or ResourceManager, running on the host.
+* Move from the host any master components, such as NameNode, running on the host.
 * Turn Off Maintenance Mode, if necessary, for the host.
 
 To delete a host from a cluster:
@@ -162,18 +175,23 @@ If you have not completed prerequisite steps, a warning message similar to the f
 Setting Maintenance Mode
 ________________________
 
-Maintenance Mode supports suppressing alerts and skipping bulk operations for specific services, components and hosts in an Ambari-managed cluster. You typically turn on Maintenance Mode when performing hardware or software maintenance, changing configuration settings, troubleshooting, decommissioning, or removing cluster nodes. You may place a service, component, or host object in Maintenance Mode before you perform necessary maintenance or troubleshooting tasks.
+Maintenance Mode supports suppressing alerts and skipping bulk operations for specific services, components and hosts in an Ambari-managed cluster.
+You typically turn on Maintenance Mode when performing hardware or software maintenance, changing configuration settings, troubleshooting, decommissioning, or removing cluster nodes.
+You may place a service, component, or host object in Maintenance Mode before you perform necessary maintenance or troubleshooting tasks.
 
 Maintenance Mode affects a service, component, or host object in the following two ways:
 
 * Maintenance Mode suppresses alerts, warnings and status change indicators generated for the object
 * Maintenance Mode exempts an object from host-level or service-level bulk operations
 
-Explicitly turning on Maintenance Mode for a service implicitly turns on Maintenance Mode for components and hosts that run the service. While Maintenance Mode On prevents bulk operations being performed on the service, component, or host, you may explicitly start and stop a service, component, or host having Maintenance Mode On.
+Explicitly turning on Maintenance Mode for a service implicitly turns on Maintenance Mode for components and hosts that run the service.
+While Maintenance Mode On prevents bulk operations being performed on the service, component, or host, you may explicitly start and stop a service, component, or host having Maintenance Mode On.
 
 **Setting Maintenance Mode for Services, Components, and Hosts**
 
-For example, examine using Maintenance Mode in a 3-node, Ambari-managed cluster installed using default options. This cluster has one data node, on host c6403. This example describes how to explicitly turn on Maintenance Mode for the HDFS service, alternative procedures for explicitly turning on Maintenance Mode for a host, and the implicit effects of turning on Maintenance Mode for a service, a component and a host.
+For example, examine using Maintenance Mode in a 3-node, Ambari-managed cluster installed using default options.
+This cluster has one data node, on host c6403.
+This example describes how to explicitly turn on Maintenance Mode for the HDFS service, alternative procedures for explicitly turning on Maintenance Mode for a host, and the implicit effects of turning on Maintenance Mode for a service, a component and a host.
 
 **How to Turn On Maintenance Mode for a Service**
 
@@ -230,7 +248,9 @@ To achieve these goals, turn on Maintenance Mode explicitly for the host compone
 Adding Hosts to a Cluster
 _________________________
 
-To add new hosts to your cluster, browse to the Hosts page and select Actions >+Add New Hosts. The Add Host Wizard provides a sequence of prompts similar to those in the Ambari Install Wizard. Follow the prompts, providing information similar to that provided to define the first set of hosts in your cluster.
+To add new hosts to your cluster, browse to the Hosts page and select Actions >+Add New Hosts.
+The Add Host Wizard provides a sequence of prompts similar to those in the Ambari Install Wizard.
+Follow the prompts, providing information similar to that provided to define the first set of hosts in your cluster.
 
 .. image:: /img/ambari/add-hosts.png
 
@@ -239,13 +259,15 @@ To add new hosts to your cluster, browse to the Hosts page and select Actions >+
 Rack Awareness
 ______________
 
-Ambari can manage Rack information for hosts. By setting the Rack ID, Ambari can display the hosts in heatmaps by Rack ID, as well users can filter & find hosts based on Rack ID on the Hosts page.
+Ambari can manage Rack information for hosts.
+By setting the Rack ID, Ambari can display the hosts in heatmaps by Rack ID, as well users can filter & find hosts based on Rack ID on the Hosts page.
 
 If HDFS is installed in your cluster, Ambari will pass this Rack ID information to HDFS via a topology script. Ambari generates a topology script at ``/etc/hadoop/conf/topology.py`` and sets the ``net.topology.script.file.name`` property in ``core-site`` automatically. This topology script reads a mappings file ``/etc/hadoop/conf/topology_mappings.data`` that Ambari automatically generates. When you make changes to Rack ID assignment in Ambari, this mappings file will be updated when you push out the HDFS configuration. HDFS uses this topology script to obtain Rack information about the DataNode hosts.
 
 **Setting Rack ID**
 
-There are two methods in Ambari Web for setting the Rack ID. You can set the Rack ID for hosts in bulk on the Hosts page using the Actions menu; and you can set the Rack ID on an individual host by viewing the Host page using the Host Actions menu.
+There are two methods in Ambari Web for setting the Rack ID.
+You can set the Rack ID for hosts in bulk on the Hosts page using the Actions menu; and you can set the Rack ID on an individual host by viewing the Host page using the Host Actions menu.
 
 To set the Rack ID in bulk on the Hosts page, use the Actions menu and select Hosts > Set Rack (for All, Filtered or Selected hosts).
 
@@ -257,6 +279,11 @@ To set the Rack ID on an individual host, browse to the Host page, use the Host 
 
 **Using a Custom Topology Script**
 
-It is possible to not have Ambari manage the Rack information for hosts. Instead, you can use a custom topology script to provide rack information to HDFS and not use the Ambari-generated topology.py script. If you choose to manage Rack information on your own, you will need to **create your own topology script and manage distributing the script to all hosts**. Ambari will also not have any knowledge of host Rack information so heatmaps will not display by Rack in Ambari Web.
+It is possible to not have Ambari manage the Rack information for hosts.
+Instead, you can use a custom topology script to provide rack information to HDFS and not use the Ambari-generated topology.py script.
+If you choose to manage Rack information on your own, you will need to **create your own topology script and manage distributing the script to all hosts**.
+Ambari will also not have any knowledge of host Rack information so heatmaps will not display by Rack in Ambari Web.
 
-To manage Rack information on your own, in the ``Services > HDFS > Configs``, modify the ``net.topology.script.file.name property``. Set this property value to your own custom topology script (for example ``/etc/hadoop/conf/topology.sh`` ). Distribute that topology script to your hosts and manage the Rack mapping information for your script outside of Ambari.
+To manage Rack information on your own, in the ``Services > HDFS > Configs``, modify the ``net.topology.script.file.name property``.
+Set this property value to your own custom topology script (for example ``/etc/hadoop/conf/topology.sh`` ).
+Distribute that topology script to your hosts and manage the Rack mapping information for your script outside of Ambari.

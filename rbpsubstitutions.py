@@ -4,7 +4,7 @@ versions_subs="""
 .. |kafka-connector-version| replace:: 0.10
 .. |cassandra-version| replace:: 2.2.5
 .. |ambari-version| replace:: 2.2.0
-.. |flink-version| replace:: 1.1.1
+.. |flink-version| replace:: 1.1.2
 """
 
 other_substitutions="""

@@ -37,7 +37,7 @@ Now we can go through a simple Flink Job that will introduce you to the basic st
     :caption: Scala
     :name: quick-scala
 
-The `Flink Programming guide <https://ci.apache.org/projects/flink/flink-docs-release-1.0/>`_ provides a good resource to start learning how to develop on Flink, giving examples and explanations of the many high-level abstractions used by the framework. If this is the first time you work with Flink, there you will find all the required fundamentals to work with it.
+The `Flink Programming guide <https://ci.apache.org/projects/flink/flink-docs-release-1.1/>`_ provides a good resource to start learning how to develop on Flink, giving examples and explanations of the many high-level abstractions used by the framework. If this is the first time you work with Flink, there you will find all the required fundamentals to work with it.
 
 
 Build, pack and submit your application

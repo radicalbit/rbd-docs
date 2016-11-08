@@ -13,9 +13,10 @@ To use this connector, add the following dependency to your project:
 
 .. literalinclude:: /rbd-examples/flink/cassandra-connector-example/pom.xml
     :caption: pom.xml
+    :name: cassandra-connector-example/pom.xml
     :language: xml
     :lines: 89-93
-    :name: pom.xml
+    :dedent: 2
 
 Installing Apache Cassandra
 ----------------------------

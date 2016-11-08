@@ -15,7 +15,7 @@ The native Java API can be included in a Maven Project by adding the following a
     :lines: 60-64
     :name: pom.xml
 
-The `official documentation <http://www.alluxio.org/documentation/en/File-System-API.html#getting-a-filesystem-client/>`_
+The `official documentation <http://www.alluxio.org/docs/1.2/en/File-System-API.html#getting-a-filesystem-client>`_
 provides a complete set of usage examples.
 
 Here is a further example of how it is possible to load files from different under file systems.

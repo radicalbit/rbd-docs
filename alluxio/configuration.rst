@@ -6,7 +6,7 @@ Alluxio Configuration
 |fdd| provides Alluxio with HDFS as the default |ufs|
 
 The table below shows a list of all the available configurations.
-See the `official documentation <http://www.alluxio.org/documentation/en/Configuration-Settings.html>`_ for more details.
+See the `official documentation <http://www.alluxio.org/docs/1.2/en/Configuration-Settings.html>`_ for more details.
 
 
 +----------------------------------------------------+----------------------------------------------------+--------------------------------------------------------------+

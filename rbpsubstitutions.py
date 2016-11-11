@@ -1,5 +1,5 @@
 versions_subs="""
-.. |alluxio-version| replace:: 1.0.1
+.. |alluxio-version| replace:: 1.2.0
 .. |kafka-version| replace:: 0.10.0.1
 .. |kafka-connector-version| replace:: 0.10
 .. |cassandra-version| replace:: 2.2.5

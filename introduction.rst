@@ -35,7 +35,7 @@ Components overview
 
 The following diagram displays the RBFDD ecosystem; in blue are the distribution components, in green are products that have some degree of integration with RBFDD.
 
-.. figure:: /img/introduction/blueprint.svg
+.. figure:: /img/introduction/blueprint.png
    :height: 400px
    :width: 640px
    :alt: RBFDD Blueprint
